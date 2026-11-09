@@ -1,0 +1,596 @@
+[
+{
+"slug": "caption-news",
+"name": "Caption News",
+"cat": "Edit & Documentary",
+"uses": [
+"Social news",
+"Report explainers"
+]
+},
+{
+"slug": "newsreel",
+"name": "1920s Newsreel",
+"cat": "Edit & Documentary",
+"uses": [
+"History stories",
+"Fads & eras"
+]
+},
+{
+"slug": "countdown",
+"name": "Live Countdown Split-screen",
+"cat": "Edit & Documentary",
+"uses": [
+"Launches",
+"Countdowns"
+]
+},
+{
+"slug": "city-symphony",
+"name": "Time-lapse Symphony",
+"cat": "Edit & Documentary",
+"uses": [
+"City films",
+"Music montages"
+]
+},
+{
+"slug": "visual-investigation",
+"name": "Visual Investigation",
+"cat": "Edit & Documentary",
+"uses": [
+"Reconstructions",
+"Fact-checks"
+]
+},
+{
+"slug": "kino-montage",
+"name": "Constructivist Montage",
+"cat": "Edit & Documentary",
+"uses": [
+"Industry histories",
+"Milestones"
+]
+},
+{
+"slug": "telestrator",
+"name": "Sports Telestrator",
+"cat": "Edit & Documentary",
+"uses": [
+"Sports analysis",
+"Match recaps"
+]
+},
+{
+"slug": "news-package",
+"name": "Broadcast News Package",
+"cat": "Edit & Documentary",
+"uses": [
+"News round-ups",
+"Bulletins"
+]
+},
+{
+"slug": "satellite-briefing",
+"name": "Satellite Briefing",
+"cat": "Evidence Films",
+"uses": [
+"Climate",
+"News explainers"
+]
+},
+{
+"slug": "briefing-board",
+"name": "Engineering Briefing Board",
+"cat": "Evidence Films",
+"uses": [
+"Engineering",
+"Option comparisons"
+]
+},
+{
+"slug": "lidar-survey",
+"name": "LiDAR Survey",
+"cat": "Evidence Films",
+"uses": [
+"Heritage",
+"Environment"
+]
+},
+{
+"slug": "white-model",
+"name": "Projection on White Model",
+"cat": "Evidence Films",
+"uses": [
+"Urban planning",
+"Exhibitions"
+]
+},
+{
+"slug": "data-physical",
+"name": "Data Physicalization",
+"cat": "Evidence Films",
+"uses": [
+"Annual reports",
+"Investor decks"
+]
+},
+{
+"slug": "teardown",
+"name": "Exploded Teardown",
+"cat": "Evidence Films",
+"uses": [
+"Hardware launches",
+"Product pages"
+]
+},
+{
+"slug": "microscope",
+"name": "Microscope Story",
+"cat": "Evidence Films",
+"uses": [
+"Biomedicine",
+"Materials science"
+]
+},
+{
+"slug": "archive-lighttable",
+"name": "Archive Light Table",
+"cat": "Evidence Films",
+"uses": [
+"Brand history",
+"Archive stories"
+]
+},
+{
+"slug": "crayon-book",
+"name": "Crayon Picture Book",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Picture books",
+"Bedtime stories"
+]
+},
+{
+"slug": "watercolor",
+"name": "Watercolor Brush",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Nature documentary",
+"Travel"
+]
+},
+{
+"slug": "ink-wash",
+"name": "Chinese Ink Wash",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Wuxia",
+"Cultural brands"
+]
+},
+{
+"slug": "impasto",
+"name": "Impasto Oil Painting",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Music videos",
+"Art & culture"
+]
+},
+{
+"slug": "one-line",
+"name": "One-line Drawing",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Brand stories",
+"Life milestones"
+]
+},
+{
+"slug": "whiteboard",
+"name": "Whiteboard Explainer",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Explainers",
+"Online courses"
+]
+},
+{
+"slug": "urban-sketch",
+"name": "Urban Sketch · Pen & Wash",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"City & travel",
+"Architecture"
+]
+},
+{
+"slug": "chalkboard",
+"name": "Chalkboard",
+"cat": "Hand-drawn & Painting",
+"uses": [
+"Word origins",
+"Myth-busting"
+]
+},
+{
+"slug": "shadow-puppet",
+"name": "Shadow Puppetry",
+"cat": "East Asian Traditions",
+"uses": [
+"Myths & folklore",
+"Heritage"
+]
+},
+{
+"slug": "ukiyoe",
+"name": "Ukiyo-e",
+"cat": "East Asian Traditions",
+"uses": [
+"Travel",
+"Japanese culture"
+]
+},
+{
+"slug": "papercut-red",
+"name": "Red Paper-cut",
+"cat": "East Asian Traditions",
+"uses": [
+"Lunar New Year",
+"Festive greetings"
+]
+},
+{
+"slug": "paper-lantern",
+"name": "Paper-cut Lightbox",
+"cat": "East Asian Traditions",
+"uses": [
+"Journeys and travel",
+"Farewells and anniversaries"
+]
+},
+{
+"slug": "risograph",
+"name": "Risograph Print",
+"cat": "Print & Printmaking",
+"uses": [
+"Indie brands",
+"Zines"
+]
+},
+{
+"slug": "halftone-dossier",
+"name": "Halftone Dossier",
+"cat": "Print & Printmaking",
+"uses": [
+"Humour",
+"Pet content"
+]
+},
+{
+"slug": "woodcut",
+"name": "Woodcut Print",
+"cat": "Print & Printmaking",
+"uses": [
+"Folk tales",
+"Craft brands"
+]
+},
+{
+"slug": "engraving",
+"name": "Copperplate Engraving",
+"cat": "Print & Printmaking",
+"uses": [
+"Museum labels",
+"Science explainers"
+]
+},
+{
+"slug": "silkscreen-poster",
+"name": "Silkscreen Travel Poster",
+"cat": "Print & Printmaking",
+"uses": [
+"Destination guides",
+"Tourism"
+]
+},
+{
+"slug": "printed-long-take",
+"name": "Printed Long Take",
+"cat": "Print & Printmaking",
+"uses": [
+"Journeys",
+"Wildlife"
+]
+},
+{
+"slug": "swiss-motion",
+"name": "Swiss Motion Graphics",
+"cat": "Graphic & Type",
+"uses": [
+"Brand identity",
+"Events"
+]
+},
+{
+"slug": "spy-titles",
+"name": "60s Spy Title Sequence",
+"cat": "Graphic & Type",
+"uses": [
+"Title sequences",
+"Event openers"
+]
+},
+{
+"slug": "art-deco",
+"name": "Art Deco",
+"cat": "Graphic & Type",
+"uses": [
+"Luxury & hospitality",
+"Galas"
+]
+},
+{
+"slug": "blueprint",
+"name": "Blueprint",
+"cat": "Graphic & Type",
+"uses": [
+"Engineering",
+"Hardware launches"
+]
+},
+{
+"slug": "stained-glass",
+"name": "Stained Glass",
+"cat": "Graphic & Type",
+"uses": [
+"Legends",
+"Heritage"
+]
+},
+{
+"slug": "pictogram-motion",
+"name": "Pictogram Motion",
+"cat": "Graphic & Type",
+"uses": [
+"Public services and city stories",
+"Brand and event identity films"
+]
+},
+{
+"slug": "ascii-crt",
+"name": "ASCII / CRT Terminal",
+"cat": "Graphic & Type",
+"uses": [
+"Developer tools",
+"Sci-fi"
+]
+},
+{
+"slug": "dataviz",
+"name": "Data Storytelling",
+"cat": "Information & Keynote",
+"uses": [
+"Data journalism",
+"Reports"
+]
+},
+{
+"slug": "iso-infographic",
+"name": "Isometric Infographic",
+"cat": "Information & Keynote",
+"uses": [
+"Process explainers",
+"Supply chains"
+]
+},
+{
+"slug": "dark-keynote",
+"name": "Dark Tech Keynote",
+"cat": "Information & Keynote",
+"uses": [
+"Product launches",
+"SaaS"
+]
+},
+{
+"slug": "living-screencast",
+"name": "Living Screencast",
+"cat": "Information & Keynote",
+"uses": [
+"Product tutorials",
+"Feature launches"
+]
+},
+{
+"slug": "hologram-hud",
+"name": "Sci-fi Hologram HUD",
+"cat": "Information & Keynote",
+"uses": [
+"Spec walkthroughs",
+"Launch videos"
+]
+},
+{
+"slug": "transit-map",
+"name": "Transit Map",
+"cat": "Information & Keynote",
+"uses": [
+"Transport",
+"Growth over time"
+]
+},
+{
+"slug": "isometric-picture-book",
+"name": "Isometric Picture Book",
+"cat": "Information & Keynote",
+"uses": [
+"Everyday rules",
+"Queues"
+]
+},
+{
+"slug": "circuit-board",
+"name": "Circuit Board",
+"cat": "Information & Keynote",
+"uses": [
+"Energy",
+"Supply chains"
+]
+},
+{
+"slug": "rubber-hose",
+"name": "1930s Rubber Hose Cartoon",
+"cat": "Cartoon & Anime",
+"uses": [
+"Food & drink",
+"Retro ads"
+]
+},
+{
+"slug": "cel-anime-80s",
+"name": "80s Cel Anime",
+"cat": "Cartoon & Anime",
+"uses": [
+"Music videos",
+"Game trailers"
+]
+},
+{
+"slug": "scifi-toon",
+"name": "Sci-Fi Sitcom Toon",
+"cat": "Cartoon & Anime",
+"uses": [
+"Comedy",
+"Tech brands"
+]
+},
+{
+"slug": "midcentury-toon",
+"name": "Mid-century Cartoon",
+"cat": "Cartoon & Anime",
+"uses": [
+"Set-up guides",
+"Help centres"
+]
+},
+{
+"slug": "pixel-rpg",
+"name": "16-bit Pixel RPG",
+"cat": "Games",
+"uses": [
+"Game trailers",
+"Recaps"
+]
+},
+{
+"slug": "hd-2d",
+"name": "HD-2D",
+"cat": "Games",
+"uses": [
+"Game trailers",
+"Fantasy"
+]
+},
+{
+"slug": "microgame",
+"name": "Microgame Frenzy",
+"cat": "Games",
+"uses": [
+"Game trailers",
+"Onboarding"
+]
+},
+{
+"slug": "game-show",
+"name": "Game Show Flat",
+"cat": "Games",
+"uses": [
+"Tech timelines",
+"Year in review"
+]
+},
+{
+"slug": "silent-film",
+"name": "1920s Silent Film",
+"cat": "Cinema & Eras",
+"uses": [
+"Comedy",
+"Retro brands"
+]
+},
+{
+"slug": "backrooms",
+"name": "Liminal Found Footage",
+"cat": "Cinema & Eras",
+"uses": [
+"Horror",
+"Mystery & ARG"
+]
+},
+{
+"slug": "brick-toy",
+"name": "Brick Toy",
+"cat": "Materials & 3D",
+"uses": [
+"Toys & kids",
+"Product builds"
+]
+},
+{
+"slug": "paper-popup",
+"name": "Paper Pop-up Book",
+"cat": "Materials & 3D",
+"uses": [
+"Children's books",
+"Game trailers"
+]
+},
+{
+"slug": "tilt-shift",
+"name": "Tilt-Shift Miniature",
+"cat": "Materials & 3D",
+"uses": [
+"City promos",
+"Real estate"
+]
+},
+{
+"slug": "lowpoly-island",
+"name": "Low-poly Isometric Island",
+"cat": "Materials & 3D",
+"uses": [
+"Game trailers",
+"World building"
+]
+},
+{
+"slug": "glass-product",
+"name": "Glass Product Render",
+"cat": "Materials & 3D",
+"uses": [
+"Product launches",
+"Consumer tech"
+]
+},
+{
+"slug": "memphis-diorama",
+"name": "Memphis Diorama",
+"cat": "Materials & 3D",
+"uses": [
+"Web heroes",
+"Ambient loops"
+]
+},
+{
+"slug": "desktop-flythrough",
+"name": "Desktop Flythrough",
+"cat": "Materials & 3D",
+"uses": [
+"App explainers",
+"Workflows"
+]
+}
+]

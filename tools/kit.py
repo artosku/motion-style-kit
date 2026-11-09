@@ -1,5 +1,5 @@
 """Pintu masuk semua perintah.   python tools/kit.py <perintah> [folder] [opsi]
-Perintah: doctor | setup | install-skill | styles | new <slug> | build | voice | ingest | mix | render | mux | check | shots | all"""
+Perintah: doctor | setup | install-skill | styles [--lemo] | new <slug> | build | voice | ingest | mix | render | mux | check | shots | all"""
 import os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kitlib import KIT, STYLES, home_videos, load_spec, run_py_in_venv
@@ -89,6 +89,12 @@ def main():
     if c == 'doctor': sys.exit(0 if doctor() else 1)
     elif c == 'setup': setup()
     elif c == 'install-skill': py('install_skill.py', *rest)
+    elif c == 'styles' and '--lemo' in rest:
+        import json
+        L = json.load(open(os.path.join(KIT, 'assets', 'lemo-styles.json'), encoding='utf-8')); cat = None
+        for s in L:
+            if s['cat'] != cat: cat = s['cat']; print(); print(f"## {cat}")
+            print(f"- {s['name']} ({s['slug']}): {', '.join(s['uses'])}")
     elif c == 'styles':
         for s in STYLES:
             print(f"{s['n']:2d}. {s['id']:11s} {s['name']:24s} {s['tagline']}")

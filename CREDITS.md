@@ -38,3 +38,6 @@ Narasi dibuat lewat [ElevenLabs](https://elevenlabs.io) atau [Cartesia](https://
 Suara: ElevenLabs. Efek suara: earshot, uisfx, Freesound (CC0). Musik dibuat dengan kode. Dibuat dengan video-style-kit (Artosku).
 ```
 Tidak ada kredit yang **wajib** muncul di video untuk aset yang disertakan; teks di atas hanya sopan santun. Atribusi ElevenLabs bisa diwajibkan oleh paket gratis mereka.
+
+## Daftar style lemo-opuscar
+`assets/lemo-styles.json` hanya berisi nama dan kategori 66 style dari [lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) oleh Lemomo (MIT, konten CC BY 4.0), untuk ditampilkan di `/motion-style-list`. Isi style-nya tidak disalin.
