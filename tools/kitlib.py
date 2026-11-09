@@ -4,7 +4,11 @@ import json, os, re, sys
 KIT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 ASSETS = os.path.join(KIT, 'assets')
 CATALOG = json.load(open(os.path.join(ASSETS, 'catalog.json'), encoding='utf-8'))
-STYLES = CATALOG['styles']
+STYLES = list(CATALOG['styles'])
+for _f in sorted(os.listdir(ASSETS)):                  # paket style tambahan: catalog_*.json (nomor 21 dst.)
+    if _f.startswith('catalog_') and _f.endswith('.json'):
+        STYLES += json.load(open(os.path.join(ASSETS, _f), encoding='utf-8'))['styles']
+NS = len(STYLES)
 
 
 def home_videos():
@@ -19,9 +23,9 @@ def norm(s):
 def find_style(name):
     """Terima id, nama, nomor 1-20, atau sebutan umum ('kertas', 'lego'); balikkan indeks 0-19 atau None."""
     if isinstance(name, int):
-        return name - 1 if 1 <= name <= 20 else None
+        return name - 1 if 1 <= name <= NS else None
     key = norm(name)
-    if key.isdigit() and 1 <= int(key) <= 20:
+    if key.isdigit() and 1 <= int(key) <= NS:
         return int(key) - 1
     for i, s in enumerate(STYLES):
         if key in (norm(s['id']), norm(s['name'])) or key in [norm(a) for a in s['aliases']]:
@@ -64,8 +68,8 @@ def load_spec(work):
         sys.exit(f'Tidak ada {p}. Buat spec.json dulu.')
     spec = json.load(open(p, encoding='utf-8'))
     n = len(spec.get('items', []))
-    if not 1 <= n <= 20:
-        sys.exit(f'Jumlah poin harus 1-20 (sekarang {n}).')
+    if not 1 <= n <= 30:
+        sys.exit(f'Jumlah poin harus 1-30 (sekarang {n}).')
     return spec
 
 

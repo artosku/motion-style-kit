@@ -1,7 +1,8 @@
 // Film Minyam terjun bebas: panel kiri (daftar poin yang terisi saat disebut) + panel kanan (Minyam jatuh, style per poin).
 // Semua isi dibaca dari timeline.json (dibuat oleh tools/build.py dari spec.json). render(t) dipanggil per frame oleh perekam video.
 import * as M from './main.js';
-import { STY, drawIntro, obstacleParts, placeParts } from './styles.js';
+import { drawIntro, obstacleParts, placeParts } from './styles.js';
+import { ALL as STY } from './registry.js';
 const { ctx, H, R, INK, MATCHA9, MATCHA5, logoPrimer, rr, mk, hash, rotp, minyamParts } = M;
 const TL = await (await fetch('timeline.json')).json();
 const T = TL.T, HALF = TL.trHalf, N = T.length, SID = TL.styles;

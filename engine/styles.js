@@ -341,3 +341,5 @@ const popup = {
 export const STY = [whiteboard, crayon, wc, ink, riso, woodcut, swiss, deco, blueprint, glass, pixel, hose, anime, midc, papercut, ukiyo, brick, tilt, lowpoly, popup];
 // style yang memakai pelukis umum diberi draw bawaan
 STY.forEach(S => { if (!S.draw && !S.full && S.paint) Object.assign(S, std(S)); });
+// dipakai paket style tambahan (styles2/3/4.js)
+export { mod, clamp, hx, tohex, mix, dark, light, lum, snap, sat, cen, bbox, rise, ctx2, circles, cloud, blob, grainTile, once, OB, LN, paint, std, sil };

@@ -5,7 +5,7 @@ from kitlib import KIT, STYLES, load_spec, resolve_styles, say_of, load_durs, id
 
 INTRO_END = 3.7                      # intro: pesawat, ayam loncat, narasi pembuka
 TR = ['iris', 'slices', 'blocks', 'wave', 'clock']
-ENGINE_FILES = ['index.html', 'film.js', 'main.js', 'styles.js', 'minyam.js']
+ENGINE_FILES = ['index.html', 'film.js', 'main.js', 'styles.js', 'styles2.js', 'styles3.js', 'styles4.js', 'registry.js', 'minyam.js']
 
 
 def copy_engine(work):

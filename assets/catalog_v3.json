@@ -1,0 +1,745 @@
+{
+ "styles": [
+  {
+   "n": 41,
+   "id": "shadow",
+   "name": "Shadow Puppetry",
+   "say": "Shadow Puppetry",
+   "tagline": "Wayang bayangan di balik layar.",
+   "aliases": [
+    "wayang",
+    "bayangan",
+    "shadow",
+    "shadow"
+   ],
+   "feel": "klasik, magis, hangat",
+   "instr": [
+    "pluck",
+    "kalimba",
+    "sine",
+    "taiko"
+   ],
+   "accent": [
+    [
+     "es",
+     "mallet/pluck",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "fit/bell/small_bell",
+     0.12,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 42,
+   "id": "lantern",
+   "name": "Paper-cut Lightbox",
+   "say": "Paper-cut Lightbox",
+   "tagline": "Kertas berlapis, bercahaya dari belakang.",
+   "aliases": [
+    "lentera",
+    "lightbox",
+    "kertas bercahaya",
+    "lantern"
+   ],
+   "feel": "hangat, tenang, indah",
+   "instr": [
+    "fm",
+    "pad",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "es",
+     "shimmer/m1",
+     0,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "pro_notify/ding_1930",
+     0.1,
+     -16,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 43,
+   "id": "halftone",
+   "name": "Halftone Dossier",
+   "say": "Halftone Dossier",
+   "tagline": "Titik-titik cetak ala komik dan arsip.",
+   "aliases": [
+    "halftone",
+    "titik",
+    "dossier",
+    "komik",
+    "halftone"
+   ],
+   "feel": "jenaka, retro, tegas",
+   "instr": [
+    "pluck",
+    "saw",
+    "tri",
+    "lofi"
+   ],
+   "accent": [
+    [
+     "es",
+     "click/snap",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_impact/short",
+     0.1,
+     -10,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 44,
+   "id": "engraving",
+   "name": "Copperplate Engraving",
+   "say": "Copperplate Engraving",
+   "tagline": "Goresan halus ala uang kertas dan buku lama.",
+   "aliases": [
+    "engraving",
+    "ukiran",
+    "arsiran",
+    "engraving"
+   ],
+   "feel": "klasik, teliti, tenang",
+   "instr": [
+    "pluck",
+    "pad",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_pencil",
+     0,
+     -9,
+     {
+      "start": 3.0,
+      "dur": 0.9
+     }
+    ],
+    [
+     "es",
+     "fit/bell/small_bell",
+     0.15,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 45,
+   "id": "silkscreen",
+   "name": "Silkscreen Travel Poster",
+   "say": "Silkscreen Travel Poster",
+   "tagline": "Poster wisata, warnanya sedikit tapi tegas.",
+   "aliases": [
+    "poster wisata",
+    "silkscreen",
+    "poster",
+    "silkscreen"
+   ],
+   "feel": "santai, cerah, petualang",
+   "instr": [
+    "marimba",
+    "saw",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "swipe/paper",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "mallet/marimba",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 46,
+   "id": "longtake",
+   "name": "Printed Long Take",
+   "say": "Printed Long Take",
+   "tagline": "Satu adegan panjang di atas kertas cetak.",
+   "aliases": [
+    "long take",
+    "cetak koran",
+    "koran",
+    "longtake"
+   ],
+   "feel": "tenang, luas, bercerita",
+   "instr": [
+    "pluck",
+    "pad",
+    "sine",
+    "soft"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_wind",
+     0,
+     -10,
+     {
+      "start": 0.5,
+      "dur": 1.6
+     }
+    ],
+    [
+     "es",
+     "whoosh_big/gust",
+     0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 47,
+   "id": "spy",
+   "name": "60s Spy Title Sequence",
+   "say": "Sixties Spy Title Sequence",
+   "tagline": "Judul film mata-mata tahun enam puluhan.",
+   "aliases": [
+    "spy",
+    "mata-mata",
+    "agen rahasia",
+    "james bond",
+    "spy"
+   ],
+   "feel": "keren, dramatis, misterius",
+   "instr": [
+    "brass",
+    "saw",
+    "saw",
+    "gated"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_impact/short",
+     0,
+     -9,
+     {}
+    ],
+    [
+     "es",
+     "mallet/flourish",
+     0.15,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 48,
+   "id": "pictogram",
+   "name": "Pictogram Motion",
+   "say": "Pictogram Motion",
+   "tagline": "Ikon sederhana yang bergerak, seperti rambu umum.",
+   "aliases": [
+    "pictogram",
+    "ikon",
+    "rambu",
+    "pictogram"
+   ],
+   "feel": "rapi, tegas, ramah",
+   "instr": [
+    "sine",
+    "tri",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "hover_tick/detent",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "hover_tick/detent",
+     0.12,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_pop/double",
+     0.26,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 49,
+   "id": "ascii",
+   "name": "ASCII / CRT Terminal",
+   "say": "ASCII CRT Terminal",
+   "tagline": "Huruf hijau di layar tabung.",
+   "aliases": [
+    "ascii",
+    "terminal",
+    "crt",
+    "hacker",
+    "ascii"
+   ],
+   "feel": "teknis, retro, fiksi ilmiah",
+   "instr": [
+    "sq12",
+    "sq25",
+    "tri",
+    "chip"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "toggle/latch",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 50,
+   "id": "dataviz",
+   "name": "Data Storytelling",
+   "say": "Data Storytelling",
+   "tagline": "Grafik yang bercerita.",
+   "aliases": [
+    "dataviz",
+    "grafik",
+    "data",
+    "chart",
+    "dataviz"
+   ],
+   "feel": "profesional, bersih, jelas",
+   "instr": [
+    "sine",
+    "pluck",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_notify/ding_2296",
+     0,
+     -15,
+     {}
+    ],
+    [
+     "es",
+     "pro_pop/bloop",
+     0.12,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 51,
+   "id": "isoinfo",
+   "name": "Isometric Infographic",
+   "say": "Isometric Infographic",
+   "tagline": "Proses digambar miring, dari atas.",
+   "aliases": [
+    "isometrik",
+    "infografis",
+    "isometric",
+    "isoinfo"
+   ],
+   "feel": "rapi, ceria, jelas",
+   "instr": [
+    "marimba",
+    "fm",
+    "tri",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "ui_pop/blip",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "click/thock",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 52,
+   "id": "keynote",
+   "name": "Dark Tech Keynote",
+   "say": "Dark Tech Keynote",
+   "tagline": "Panggung peluncuran, serba gelap dan mewah.",
+   "aliases": [
+    "keynote",
+    "peluncuran",
+    "gelap",
+    "tech",
+    "keynote"
+   ],
+   "feel": "mewah, modern, megah",
+   "instr": [
+    "pad",
+    "fm",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "es",
+     "downlifter/air_fall",
+     -0.1,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "logo_sting/zip_ping",
+     0.05,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 53,
+   "id": "screencast",
+   "name": "Living Screencast",
+   "say": "Living Screencast",
+   "tagline": "Layar aplikasi yang hidup.",
+   "aliases": [
+    "screencast",
+    "aplikasi",
+    "layar aplikasi",
+    "screencast"
+   ],
+   "feel": "bersih, modern, ramah",
+   "instr": [
+    "glock",
+    "tri",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "ui_pop/soft",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "click/snap",
+     0.14,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 54,
+   "id": "hologram",
+   "name": "Sci-fi Hologram HUD",
+   "say": "Sci-fi Hologram HUD",
+   "tagline": "Layar hologram ala film fiksi ilmiah.",
+   "aliases": [
+    "hologram",
+    "hud",
+    "fiksi ilmiah",
+    "hologram"
+   ],
+   "feel": "futuristik, teknis, dingin",
+   "instr": [
+    "fm",
+    "pad",
+    "saw",
+    "gated"
+   ],
+   "accent": [
+    [
+     "es",
+     "shimmer/m1",
+     0,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "pro_zip/up",
+     0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 55,
+   "id": "transit",
+   "name": "Transit Map",
+   "say": "Transit Map",
+   "tagline": "Peta kereta, garisnya berwarna-warni.",
+   "aliases": [
+    "peta kereta",
+    "transit",
+    "metro",
+    "transit"
+   ],
+   "feel": "rapi, ramah, bersemangat",
+   "instr": [
+    "pluck",
+    "marimba",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "es",
+     "mallet/glock",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "knock/wood",
+     0.14,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 56,
+   "id": "isobook",
+   "name": "Isometric Picture Book",
+   "say": "Isometric Picture Book",
+   "tagline": "Buku gambar miring, penuh kejadian kecil.",
+   "aliases": [
+    "buku gambar",
+    "isometric book",
+    "picture book",
+    "isobook"
+   ],
+   "feel": "hangat, ceria, bercerita",
+   "instr": [
+    "kalimba",
+    "glock",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "pluck/kalimba",
+     0,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "ui_pop/boop",
+     0.14,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 57,
+   "id": "circuit",
+   "name": "Circuit Board",
+   "say": "Circuit Board",
+   "tagline": "Jalur sirkuit yang menyala.",
+   "aliases": [
+    "sirkuit",
+    "circuit",
+    "pcb",
+    "elektronik",
+    "circuit"
+   ],
+   "feel": "teknis, energik, modern",
+   "instr": [
+    "sq50",
+    "sine",
+    "sq25",
+    "chip"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_zip/up",
+     0,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 58,
+   "id": "scifi",
+   "name": "Sci-Fi Sitcom Toon",
+   "say": "Sci-Fi Sitcom Toon",
+   "tagline": "Kartun komedi masa depan.",
+   "aliases": [
+    "sitcom",
+    "kartun masa depan",
+    "scifi toon",
+    "futurama",
+    "scifi"
+   ],
+   "feel": "lucu, nyentrik, retro",
+   "instr": [
+    "saw",
+    "fm",
+    "sq25",
+    "lofi"
+   ],
+   "accent": [
+    [
+     "es",
+     "logo_sting/zip_ping",
+     0,
+     -13,
+     {}
+    ],
+    [
+     "es",
+     "whoosh_fast/whistle",
+     0.1,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 59,
+   "id": "hd2d",
+   "name": "HD-2D",
+   "say": "HD two D",
+   "tagline": "Pixel jadul... dengan cahaya modern.",
+   "aliases": [
+    "hd2d",
+    "hd 2d",
+    "pixel modern",
+    "rpg modern",
+    "hd2d"
+   ],
+   "feel": "nostalgia, megah, hangat",
+   "instr": [
+    "organ",
+    "pluck",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "mallet/celesta",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "shimmer/m1",
+     0.1,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 60,
+   "id": "microgame",
+   "name": "Microgame Frenzy",
+   "say": "Microgame Frenzy",
+   "tagline": "Permainan mini yang serba cepat.",
+   "aliases": [
+    "microgame",
+    "warioware",
+    "game cepat",
+    "microgame"
+   ],
+   "feel": "riuh, cepat, seru",
+   "instr": [
+    "sq50",
+    "sq25",
+    "tri",
+    "chip"
+   ],
+   "accent": [
+    [
+     "ui",
+     "arcade/level-up",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "pro_pop/chirp",
+     0.14,
+     -13,
+     {}
+    ]
+   ]
+  }
+ ]
+}

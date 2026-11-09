@@ -1,0 +1,733 @@
+{
+ "styles": [
+  {
+   "n": 21,
+   "id": "captionnews",
+   "name": "Caption News",
+   "say": "Caption News",
+   "tagline": "Berita pendek yang tetap jelas tanpa suara.",
+   "aliases": [
+    "caption news",
+    "berita",
+    "news pendek"
+   ],
+   "feel": "tegas, cepat",
+   "instr": [
+    "sq12",
+    "tri",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_click/glass",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "hover_tick/detent",
+     0.15,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 22,
+   "id": "newsreel",
+   "name": "1920s Newsreel",
+   "say": "Nineteen Twenties Newsreel",
+   "tagline": "Kabar lawas ala bioskop jadul.",
+   "aliases": [
+    "newsreel",
+    "berita lawas",
+    "film jadul sepia"
+   ],
+   "feel": "nostalgia, klasik",
+   "instr": [
+    "organ",
+    "pluck",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "es",
+     "shutter/film",
+     0,
+     -9,
+     {}
+    ],
+    [
+     "ov",
+     "ov_paper",
+     0.1,
+     -14,
+     {
+      "start": 1.0,
+      "dur": 0.8
+     }
+    ]
+   ]
+  },
+  {
+   "n": 23,
+   "id": "countdown",
+   "name": "Live Countdown Split-screen",
+   "say": "Live Countdown Split-screen",
+   "tagline": "Layar terbelah... hitung mundur peluncuran.",
+   "aliases": [
+    "countdown",
+    "hitung mundur",
+    "peluncuran"
+   ],
+   "feel": "tegang, menanti",
+   "instr": [
+    "sq12",
+    "saw",
+    "sine",
+    "gated"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0.12,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "pro_impact_short",
+     0.3,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 24,
+   "id": "citysymphony",
+   "name": "Time-lapse Symphony",
+   "say": "Time-lapse Symphony",
+   "tagline": "Kota bergerak cepat, mengikuti irama.",
+   "aliases": [
+    "time lapse",
+    "kota",
+    "timelapse"
+   ],
+   "feel": "megah, hidup",
+   "instr": [
+    "fm",
+    "pad",
+    "sine",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "whoosh_big/gust",
+     -0.1,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "mallet/celesta",
+     0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 25,
+   "id": "investigation",
+   "name": "Visual Investigation",
+   "say": "Visual Investigation",
+   "tagline": "Menyusun bukti seperti detektif.",
+   "aliases": [
+    "investigasi",
+    "detektif",
+    "bukti"
+   ],
+   "feel": "misterius, teliti",
+   "instr": [
+    "pluck",
+    "pad",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "hover_tick/detent",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_click/glass",
+     0.2,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 26,
+   "id": "kino",
+   "name": "Constructivist Montage",
+   "say": "Constructivist Montage",
+   "tagline": "Poster revolusi yang bergerak.",
+   "aliases": [
+    "konstruktivis",
+    "poster revolusi",
+    "montase"
+   ],
+   "feel": "tegas, bergelora",
+   "instr": [
+    "brass",
+    "saw",
+    "tri",
+    "taiko"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_impact_short",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "mallet/flourish",
+     0.1,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 27,
+   "id": "telestrator",
+   "name": "Sports Telestrator",
+   "say": "Sports Telestrator",
+   "tagline": "Coretan analisis ala siaran bola.",
+   "aliases": [
+    "telestrator",
+    "bola",
+    "analisis olahraga"
+   ],
+   "feel": "semangat, ramai",
+   "instr": [
+    "saw",
+    "pluck",
+    "tri",
+    "gated"
+   ],
+   "accent": [
+    [
+     "es",
+     "swipe/cloth",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "pro_pop/chirp",
+     0.18,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 28,
+   "id": "newspackage",
+   "name": "Broadcast News Package",
+   "say": "Broadcast News Package",
+   "tagline": "Paket berita lengkap seperti di televisi.",
+   "aliases": [
+    "berita tv",
+    "broadcast",
+    "paket berita"
+   ],
+   "feel": "resmi, sigap",
+   "instr": [
+    "brass",
+    "sq12",
+    "tri",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "logo_sting/zip_ping",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "whoosh_fast/crisp",
+     -0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 29,
+   "id": "satellite",
+   "name": "Satellite Briefing",
+   "say": "Satellite Briefing",
+   "tagline": "Dunia dilihat dari satelit.",
+   "aliases": [
+    "satelit",
+    "peta satelit",
+    "dari atas"
+   ],
+   "feel": "tenang, luas",
+   "instr": [
+    "sine",
+    "pad",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_zip/up",
+     -0.05,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 30,
+   "id": "briefingboard",
+   "name": "Engineering Briefing Board",
+   "say": "Engineering Briefing Board",
+   "tagline": "Papan rapat para insinyur.",
+   "aliases": [
+    "insinyur",
+    "papan rapat",
+    "engineering"
+   ],
+   "feel": "rapi, teknis",
+   "instr": [
+    "sq12",
+    "tri",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "click/snap",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "hover_tick/detent",
+     0.15,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 31,
+   "id": "lidar",
+   "name": "LiDAR Survey",
+   "say": "LiDAR Survey",
+   "tagline": "Titik-titik laser yang memindai ruangan.",
+   "aliases": [
+    "lidar",
+    "titik laser",
+    "scan"
+   ],
+   "feel": "futuristik, sepi",
+   "instr": [
+    "sine",
+    "fm",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_zip/up",
+     0,
+     -14,
+     {}
+    ],
+    [
+     "es",
+     "pro_notify/ding_1930",
+     0.2,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 32,
+   "id": "whitemodel",
+   "name": "Projection on White Model",
+   "say": "Projection on White Model",
+   "tagline": "Cahaya proyektor di atas maket putih.",
+   "aliases": [
+    "maket",
+    "proyeksi",
+    "white model"
+   ],
+   "feel": "bersih, modern",
+   "instr": [
+    "fm",
+    "pad",
+    "sine",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "shimmer/m1",
+     0,
+     -13,
+     {}
+    ],
+    [
+     "es",
+     "mallet/glock",
+     0.15,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 33,
+   "id": "dataphysical",
+   "name": "Data Physicalization",
+   "say": "Data Physicalization",
+   "tagline": "Angka dijadikan benda nyata.",
+   "aliases": [
+    "data fisik",
+    "balok data",
+    "angka nyata"
+   ],
+   "feel": "hangat, hands-on",
+   "instr": [
+    "marimba",
+    "pluck",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "es",
+     "knock/wood",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "mallet/marimba",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 34,
+   "id": "teardown",
+   "name": "Exploded Teardown",
+   "say": "Exploded Teardown",
+   "tagline": "Produk dibongkar, tiap bagian melayang.",
+   "aliases": [
+    "teardown",
+    "bongkar",
+    "exploded view"
+   ],
+   "feel": "penasaran, rapi",
+   "instr": [
+    "pluck",
+    "tri",
+    "tri",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "toggle/latch",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "click/snap",
+     0.12,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_zip/up",
+     0.25,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 35,
+   "id": "microscope",
+   "name": "Microscope Story",
+   "say": "Microscope Story",
+   "tagline": "Mengintip dunia yang sangat kecil.",
+   "aliases": [
+    "mikroskop",
+    "sel",
+    "dunia kecil"
+   ],
+   "feel": "takjub, tenang",
+   "instr": [
+    "pad",
+    "kalimba",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "es",
+     "drip/bloop",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "pro_pop/bloop",
+     0.15,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 36,
+   "id": "archive",
+   "name": "Archive Light Table",
+   "say": "Archive Light Table",
+   "tagline": "Arsip lama di atas meja cahaya.",
+   "aliases": [
+    "arsip",
+    "meja cahaya",
+    "negatif foto"
+   ],
+   "feel": "nostalgia, lembut",
+   "instr": [
+    "kalimba",
+    "pad",
+    "sine",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "shutter/film",
+     0,
+     -9,
+     {}
+    ],
+    [
+     "ov",
+     "ov_paper",
+     0.2,
+     -13,
+     {
+      "start": 1.0,
+      "dur": 0.8
+     }
+    ]
+   ]
+  },
+  {
+   "n": 37,
+   "id": "impasto",
+   "name": "Impasto Oil Painting",
+   "say": "Impasto Oil Painting",
+   "tagline": "Cat minyak tebal, goresannya terasa.",
+   "aliases": [
+    "cat minyak",
+    "impasto",
+    "lukisan tebal"
+   ],
+   "feel": "ekspresif, hangat",
+   "instr": [
+    "pad",
+    "pluck",
+    "sine",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "swipe/velvet",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "drip/drop",
+     0.15,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 38,
+   "id": "oneline",
+   "name": "One-line Drawing",
+   "say": "One-line Drawing",
+   "tagline": "Satu garis... tanpa putus.",
+   "aliases": [
+    "satu garis",
+    "one line",
+    "garis tunggal"
+   ],
+   "feel": "tenang, minimal",
+   "instr": [
+    "sine",
+    "kalimba",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_pencil",
+     0,
+     -8,
+     {
+      "start": 2.0,
+      "dur": 1.0
+     }
+    ],
+    [
+     "es",
+     "pluck/kalimba",
+     0.2,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 39,
+   "id": "urbansketch",
+   "name": "Urban Sketch",
+   "say": "Urban Sketch",
+   "tagline": "Sketsa pena dan cat air di sudut kota.",
+   "aliases": [
+    "urban sketch",
+    "sketsa kota",
+    "pena cat air"
+   ],
+   "feel": "santai, jalan-jalan",
+   "instr": [
+    "pluck",
+    "marimba",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_pencil",
+     0,
+     -9,
+     {
+      "start": 6.0,
+      "dur": 0.8
+     }
+    ],
+    [
+     "es",
+     "drip/drop",
+     0.2,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 40,
+   "id": "chalkboard",
+   "name": "Chalkboard",
+   "say": "Chalkboard",
+   "tagline": "Tulisan kapur di papan tulis.",
+   "aliases": [
+    "papan tulis",
+    "kapur",
+    "chalkboard"
+   ],
+   "feel": "seperti belajar di kelas",
+   "instr": [
+    "marimba",
+    "pluck",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "es",
+     "click/thock",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "ov",
+     "ov_pencil",
+     0.1,
+     -10,
+     {
+      "start": 3.0,
+      "dur": 0.8
+     }
+    ]
+   ]
+  }
+ ]
+}

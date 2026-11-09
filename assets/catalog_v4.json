@@ -1,0 +1,10 @@
+{
+  "styles": [
+    {"n": 61, "id": "gameshow", "name": "Game Show Flat", "say": "Game Show Flat", "tagline": "Panggung kuis yang cerah.", "aliases": ["game show", "kuis", "quiz"], "feel": "ramai, meriah", "instr": ["brass", "marimba", "tri", "chip"], "accent": [["ui", "arcade/level-up", 0, -10, {}]]},
+    {"n": 62, "id": "silentfilm", "name": "1920s Silent Film", "say": "Nineteen Twenties Silent Film", "tagline": "Film bisu hitam putih yang bergetar.", "aliases": ["film bisu", "silent film", "hitam putih"], "feel": "jadul, lucu", "instr": ["organ", "wood", "tick", "soft"], "accent": [["es", "shutter/film", 0, -8, {}]]},
+    {"n": 63, "id": "backrooms", "name": "Liminal Found Footage", "say": "Liminal Found Footage", "tagline": "Rekaman janggal di ruangan kosong.", "aliases": ["backrooms", "liminal", "horor"], "feel": "sepi, janggal", "instr": ["pad", "sine", "gated", "none"], "accent": [["es", "pro_hover_tick/ping", 0, -10, {}]]},
+    {"n": 64, "id": "glassproduct", "name": "Glass Product Render", "say": "Glass Product Render", "tagline": "Produk kaca yang mengilap.", "aliases": ["kaca", "glass", "produk"], "feel": "mewah, bersih", "instr": ["glock", "pad", "sine", "soft"], "accent": [["es", "pro_click/glass", 0, -8, {}]]},
+    {"n": 65, "id": "memphis", "name": "Memphis Diorama", "say": "Memphis Diorama", "tagline": "Bentuk geometri warna-warni ala delapan puluhan.", "aliases": ["memphis", "geometris", "80an"], "feel": "ceria, ramai", "instr": ["fm", "marimba", "tri", "tick"], "accent": [["es", "ui_pop/boop", 0, -8, {}]]},
+    {"n": 66, "id": "desktop", "name": "Desktop Flythrough", "say": "Desktop Flythrough", "tagline": "Terbang menyusuri layar komputer.", "aliases": ["desktop", "layar komputer", "aplikasi"], "feel": "modern, rapi", "instr": ["lofi", "pluck", "sine", "soft"], "accent": [["es", "click/snap", 0, -8, {}]]}
+  ]
+}
