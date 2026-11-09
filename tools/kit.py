@@ -70,13 +70,14 @@ def setup():
     print('setup selesai. Cek: python tools/kit.py doctor')
 
 
-def render(w, workers=4):
-    sh(['node', os.path.join(KIT, 'render', 'video.mjs'), w, '--fps', '24', '--workers', str(workers), '--out', os.path.join(w, 'out', 'video.mp4')])
+def render(w, workers=4, portrait=False):
+    extra = ['--q', 'layout=portrait', '--size', '1080x1920'] if portrait else []
+    sh(['node', os.path.join(KIT, 'render', 'video.mjs'), w, '--fps', '24', '--workers', str(workers), '--out', os.path.join(w, 'out', 'video-portrait.mp4' if portrait else 'video.mp4'), *extra])
 
 
-def mux(w):
-    slug = load_spec(w).get('slug', 'video'); out = os.path.join(w, slug + '.mp4')
-    sh(['sh', os.path.join(KIT, 'render', 'mux.sh'), os.path.join(w, 'out', 'video.mp4'), os.path.join(w, 'out', 'mix.wav'), out, '24', '0'])
+def mux(w, portrait=False):
+    slug = load_spec(w).get('slug', 'video'); out = os.path.join(w, slug + ('-portrait' if portrait else '') + '.mp4')
+    sh(['sh', os.path.join(KIT, 'render', 'mux.sh'), os.path.join(w, 'out', 'video-portrait.mp4' if portrait else 'video.mp4'), os.path.join(w, 'out', 'mix.wav'), out, '24', '0'])
     print('VIDEO:', out)
 
 
@@ -104,10 +105,14 @@ def main():
     elif c == 'voice': py('voice.py', w, *rest[1:])
     elif c == 'ingest': py('ingest.py', w)
     elif c == 'mix': py('mix.py', w)
-    elif c == 'render': render(w, int(rest[1]) if len(rest) > 1 else 4)
-    elif c == 'mux': mux(w)
+    elif c == 'render':
+        nums = [x for x in rest[1:] if x.isdigit()]; render(w, int(nums[0]) if nums else 4, '--portrait' in rest)
+    elif c == 'mux': mux(w, '--portrait' in rest)
     elif c == 'check': py('check.py', w, *rest[1:])
-    elif c == 'shots': sh(['node', os.path.join(KIT, 'render', 'shot.mjs'), w, os.path.join(w, 'out', 'shots'), *rest[1:]])
+    elif c == 'shots':
+        pt = '--portrait' in rest
+        if pt: os.environ['LAYOUT'] = 'portrait'
+        sh(['node', os.path.join(KIT, 'render', 'shot.mjs'), w, os.path.join(w, 'out', 'shots-portrait' if pt else 'shots'), *[x for x in rest[1:] if x != '--portrait']])
     elif c == 'all':
         py('build.py', w); py('mix.py', w); render(w); mux(w); py('check.py', w)
     else:
