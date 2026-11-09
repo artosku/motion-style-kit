@@ -1,11 +1,11 @@
-"""Pasang perintah /video-style ke Claude Code (dan agen lain yang membaca folder skills).
+"""Pasang perintah /motion-style ke Claude Code (dan agen lain yang membaca folder skills).
    python tools/kit.py install-skill [folder-tujuan]     bawaan: ~/.claude/skills
 Isi SKILL.md dan guides disalin dengan path kit yang benar, jadi skill berdiri sendiri."""
 import os, shutil, sys
 from kitlib import KIT
 
 dest_root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.expanduser('~'), '.claude', 'skills')
-dest = os.path.join(dest_root, 'video-style'); kit = KIT.replace(chr(92), '/')
+dest = os.path.join(dest_root, 'motion-style'); kit = KIT.replace(chr(92), '/')
 if os.path.isdir(dest): shutil.rmtree(dest)
 os.makedirs(os.path.join(dest, 'guides'))
 def put(src, dst):
@@ -13,4 +13,4 @@ def put(src, dst):
 put(os.path.join(KIT, 'skill', 'SKILL.template.md'), os.path.join(dest, 'SKILL.md'))
 for f in os.listdir(os.path.join(KIT, 'skill', 'guides')):
     put(os.path.join(KIT, 'skill', 'guides', f), os.path.join(dest, 'guides', f))
-print('terpasang:', dest.replace(chr(92), '/'), '| ketik /video-style di Claude Code (buka sesi baru kalau belum muncul)')
+print('terpasang:', dest.replace(chr(92), '/'), '| ketik /motion-style di Claude Code (buka sesi baru kalau belum muncul)')

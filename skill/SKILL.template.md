@@ -1,10 +1,10 @@
 ---
-name: video-style
-description: Membuat video motion 16:9 (MP4) dengan maskot Minyam yang jatuh bebas dalam satu dari 20 style gambar (kertas, cat air, pixel, kartun lawas, dst.), lengkap dengan narasi opsional, musik, efek suara, caption, dan ajakan (CTA). Pakai saat user mengetik /video-style atau minta video motion bergaya tertentu dari sebuah topik.
-argument-hint: "[style] <topik>   contoh: /video-style kertas 5 tips hemat jajan"
+name: motion-style
+description: Membuat video motion 16:9 (MP4) dengan maskot Minyam yang jatuh bebas dalam satu dari 20 style gambar (kertas, cat air, pixel, kartun lawas, dst.), lengkap dengan narasi opsional, musik, efek suara, caption, dan ajakan (CTA). Pakai saat user mengetik /motion-style atau minta video motion bergaya tertentu dari sebuah topik.
+argument-hint: "[style] <topik>   contoh: /motion-style kertas 5 tips hemat jajan"
 ---
 
-# /video-style
+# /motion-style
 
 Kamu membuat video motion dari **topik** (dan **style** kalau user menyebutnya). Semua alat sudah ada di folder kit:
 

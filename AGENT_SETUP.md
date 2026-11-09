@@ -1,6 +1,6 @@
 # AGENT_SETUP.md: baca sekali, lalu pasang semuanya untuk user
 
-Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan `/video-style <style> <topik>`. Tugasmu: pasang kit sebagai alat, lalu buat perintah itu.
+Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan `/motion-style <style> <topik>`. Tugasmu: pasang kit sebagai alat, lalu buat perintah itu.
 
 ## Cara bicara (ketat)
 - Bahasa user. **Poin pendek**, kata sederhana, tanpa istilah teknis kecuali diminta.
@@ -26,7 +26,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - Kalau memilih ElevenLabs di situs: pasang juga `pip install -r requirements-voice.txt` di `.venv` (izin dulu).
 
 ## Langkah 4. Pasang perintah
-- `python tools/kit.py install-skill` (menulis `~/.claude/skills/video-style/`). Untuk agen lain: `python tools/kit.py install-skill <folder skills agen itu>`, atau berikan folder `~/.claude/skills/video-style/` ke user.
+- `python tools/kit.py install-skill` (menulis `~/.claude/skills/motion-style/`). Untuk agen lain: `python tools/kit.py install-skill <folder skills agen itu>`, atau berikan folder `~/.claude/skills/motion-style/` ke user.
 
 ## Langkah 5. Uji cepat
 - `python tools/kit.py new uji` (mencetak folder), salin `examples/20-style/spec.json` ke folder itu.
@@ -34,8 +34,8 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - Jangan render penuh sekarang.
 
 ## Langkah 6. Pesan akhir (poin-poin)
-- Sudah siap. Ketik `/video-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul).
-- Contoh: `/video-style kertas 5 tips hemat jajan`. Style boleh dikosongkan, nanti ditawari pilihan.
+- Sudah siap. Ketik `/motion-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul).
+- Contoh: `/motion-style kertas 5 tips hemat jajan`. Style boleh dikosongkan, nanti ditawari pilihan.
 - Hasil tersimpan di `~/Videos/video-style/<nama>/` (path lengkap disebut tiap selesai).
 - Satu video 30 detik butuh sekitar 1-2 menit render.
 - Batasan: hanya 16:9, karakter Minyam.

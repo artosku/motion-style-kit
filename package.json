@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Video motion Minyam (jatuh bebas) dalam 20 style, dibuat penuh dari kode. Dipakai lewat perintah /video-style.",
+  "description": "Video motion Minyam (jatuh bebas) dalam 20 style, dibuat penuh dari kode. Dipakai lewat perintah /motion-style.",
   "engines": { "node": ">=20" },
   "dependencies": { "playwright-core": "^1.63.0" }
 }

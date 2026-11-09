@@ -1,6 +1,6 @@
 # Kredit dan lisensi
 
-Kit ini **tidak membuat teknologi baru**. Ia merangkai alat dan aset terbuka supaya orang awam cukup mengetik `/video-style`. Ini semua yang dipakai.
+Kit ini **tidak membuat teknologi baru**. Ia merangkai alat dan aset terbuka supaya orang awam cukup mengetik `/motion-style`. Ini semua yang dipakai.
 
 ## Wajib (ada syaratnya)
 | Apa | Dipakai untuk | Lisensi | Syarat | Sudah dipenuhi |
