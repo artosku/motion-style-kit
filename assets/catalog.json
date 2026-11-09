@@ -1,0 +1,736 @@
+{
+ "intro_instr": [
+  "marimba",
+  "pluck",
+  "tri",
+  "soft"
+ ],
+ "transitions": {
+  "iris": [
+   "whoosh_big/jet",
+   -9
+  ],
+  "slices": [
+   "swipe/paper",
+   -8
+  ],
+  "blocks": [
+   "whoosh_fast/tight",
+   -9
+  ],
+  "wave": [
+   "whoosh_big/gust",
+   -9
+  ],
+  "clock": [
+   "swipe/velvet",
+   -8
+  ]
+ },
+ "styles": [
+  {
+   "n": 1,
+   "id": "whiteboard",
+   "name": "Whiteboard Explainer",
+   "say": "Whiteboard Explainer",
+   "tagline": "Kayak guru nulis di papan.",
+   "aliases": [
+    "papan tulis",
+    "explainer"
+   ],
+   "feel": "bersih, hitam-putih, seperti dijelaskan guru",
+   "instr": [
+    "marimba",
+    "pluck",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_pencil",
+     0,
+     -8,
+     {
+      "start": 2.0,
+      "dur": 0.9
+     }
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "id": "crayon",
+   "name": "Crayon Picture Book",
+   "say": "Crayon Picture Book",
+   "tagline": "Gambar buku anak-anak.",
+   "aliases": [
+    "krayon",
+    "buku anak",
+    "picture book"
+   ],
+   "feel": "hangat, mirip buku cerita anak",
+   "instr": [
+    "glock",
+    "kalimba",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_pencil",
+     0,
+     -9,
+     {
+      "start": 6.0,
+      "dur": 0.8
+     }
+    ],
+    [
+     "es",
+     "click/thock",
+     0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "id": "watercolor",
+   "name": "Watercolor Brush",
+   "say": "Watercolor Brush",
+   "tagline": "Lembut, catnya meleber.",
+   "aliases": [
+    "cat air",
+    "akuarel"
+   ],
+   "feel": "lembut, warna meleber",
+   "instr": [
+    "fm",
+    "pad",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "es",
+     "drip/drop",
+     0,
+     -9,
+     {}
+    ],
+    [
+     "es",
+     "drip/bloop",
+     0.2,
+     -11,
+     {}
+    ],
+    [
+     "ui",
+     "dreamy/reward",
+     0.05,
+     -16,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "id": "ink",
+   "name": "Chinese Ink Wash",
+   "say": "Chinese Ink Wash",
+   "tagline": "Tinta hitam ala lukisan klasik.",
+   "aliases": [
+    "tinta",
+    "chinese ink",
+    "sumi-e"
+   ],
+   "feel": "elegan, hitam-putih, tenang",
+   "instr": [
+    "pluck",
+    "pad",
+    "sine",
+    "taiko"
+   ],
+   "accent": [
+    [
+     "es",
+     "swipe/velvet",
+     -0.1,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "fit/bell/small_bell",
+     0.05,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "id": "riso",
+   "name": "Risograph Print",
+   "say": "Risograph Print",
+   "tagline": "Cetakan zine, warnanya mencolok.",
+   "aliases": [
+    "risograph",
+    "zine"
+   ],
+   "feel": "mencolok, tegas, anak muda",
+   "instr": [
+    "saw",
+    "pluck",
+    "saw",
+    "lofi"
+   ],
+   "accent": [
+    [
+     "ui",
+     "mechanical/press",
+     0,
+     -10,
+     {}
+    ],
+    [
+     "es",
+     "toggle/latch",
+     0.12,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "id": "woodcut",
+   "name": "Woodcut Print",
+   "say": "Woodcut Print",
+   "tagline": "Goresan kayu yang tegas.",
+   "aliases": [
+    "cetak kayu",
+    "linocut"
+   ],
+   "feel": "kuat, kontras tinggi",
+   "instr": [
+    "marimba",
+    "pluck",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_woodchop",
+     0,
+     -6,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "id": "swiss",
+   "name": "Swiss Motion Graphics",
+   "say": "Swiss Motion Graphics",
+   "tagline": "Rapi, tegas, penuh grid.",
+   "aliases": [
+    "swiss",
+    "grafis swiss",
+    "motion graphics"
+   ],
+   "feel": "profesional, rapi, tegas",
+   "instr": [
+    "sine",
+    "tri",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "hover_tick/detent",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "hover_tick/detent",
+     0.12,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "hover_tick/detent",
+     0.24,
+     -12,
+     {}
+    ],
+    [
+     "ui",
+     "minimal/select",
+     0.3,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "id": "deco",
+   "name": "Art Deco",
+   "say": "Art Deco",
+   "tagline": "Mewah ala tahun dua puluhan.",
+   "aliases": [
+    "art deco"
+   ],
+   "feel": "mewah, klasik, elegan",
+   "instr": [
+    "brass",
+    "fm",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "mallet/flourish",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "pro_notify/ding_2296",
+     0.15,
+     -17,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "id": "blueprint",
+   "name": "Blueprint",
+   "say": "Blueprint",
+   "tagline": "Cetak biru ala insinyur.",
+   "aliases": [
+    "cetak biru",
+    "teknik"
+   ],
+   "feel": "teknis, serius, rapi",
+   "instr": [
+    "sq12",
+    "sine",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0.1,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_hover_tick/ping",
+     0.2,
+     -12,
+     {}
+    ],
+    [
+     "es",
+     "pro_click/glass",
+     0.32,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "id": "glass",
+   "name": "Stained Glass",
+   "say": "Stained Glass",
+   "tagline": "Kaca patri warna-warni.",
+   "aliases": [
+    "kaca patri",
+    "stained glass"
+   ],
+   "feel": "indah, warna-warni, megah",
+   "instr": [
+    "organ",
+    "pad",
+    "sine",
+    "none"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_glass",
+     0,
+     -12,
+     {
+      "start": 0.5,
+      "dur": 1.6
+     }
+    ],
+    [
+     "es",
+     "pro_notify/ding_1930",
+     0.05,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "id": "pixel",
+   "name": "Pixel RPG 16-bit",
+   "say": "Pixel RPG sixteen bit",
+   "tagline": "Berasa main game jadul.",
+   "aliases": [
+    "pixel",
+    "8 bit",
+    "16 bit",
+    "game jadul",
+    "rpg"
+   ],
+   "feel": "nostalgia game, seru",
+   "instr": [
+    "sq50",
+    "sq25",
+    "tri",
+    "chip"
+   ],
+   "accent": [
+    [
+     "ui",
+     "arcade/level-up",
+     0,
+     -10,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 12,
+   "id": "hose",
+   "name": "Rubber Hose Cartoon",
+   "say": "Rubber Hose Cartoon",
+   "tagline": "Kartun lawas, badannya kenyal.",
+   "aliases": [
+    "rubber hose",
+    "kartun lawas",
+    "kartun 1930"
+   ],
+   "feel": "lucu, kenyal, lawas",
+   "instr": [
+    "pluck",
+    "tri",
+    "tri",
+    "wood"
+   ],
+   "accent": [
+    [
+     "ui",
+     "rubber/reaction",
+     0,
+     -9,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 13,
+   "id": "anime",
+   "name": "80s Cel Anime",
+   "say": "Eighties Cel Anime",
+   "tagline": "Anime retro tahun delapan puluhan.",
+   "aliases": [
+    "anime",
+    "anime 80an",
+    "cel"
+   ],
+   "feel": "nostalgia, dramatis",
+   "instr": [
+    "saw",
+    "saw",
+    "saw",
+    "gated"
+   ],
+   "accent": [
+    [
+     "es",
+     "whoosh_fast/whistle",
+     -0.1,
+     -15,
+     {}
+    ],
+    [
+     "es",
+     "logo_sting/zip_ping",
+     0.05,
+     -15,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 14,
+   "id": "midcentury",
+   "name": "Mid-century Cartoon",
+   "say": "Mid-century Cartoon",
+   "tagline": "Kartun datar yang klasik.",
+   "aliases": [
+    "mid century",
+    "kartun datar",
+    "retro 50an"
+   ],
+   "feel": "klasik, ramah, datar",
+   "instr": [
+    "fm",
+    "tri",
+    "pluck",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "mallet/marimba",
+     0,
+     -11,
+     {}
+    ],
+    [
+     "es",
+     "knock/wood",
+     0.2,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 15,
+   "id": "papercut",
+   "name": "Red Paper-cut",
+   "say": "Red Paper-cut",
+   "tagline": "Kertas merah yang digunting.",
+   "aliases": [
+    "paper cut",
+    "kertas",
+    "gunting kertas",
+    "kertas merah"
+   ],
+   "feel": "tradisional, meriah",
+   "instr": [
+    "pluck",
+    "pad",
+    "sine",
+    "taiko"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_scissors",
+     0,
+     -6,
+     {}
+    ],
+    [
+     "ov",
+     "ov_scissors",
+     0.26,
+     -9,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 16,
+   "id": "ukiyoe",
+   "name": "Ukiyo-e",
+   "say": "Ukiyo-e",
+   "tagline": "Cetak kayu Jepang klasik.",
+   "aliases": [
+    "ukiyo-e",
+    "ukiyo e",
+    "jepang klasik"
+   ],
+   "feel": "tenang, klasik, artistik",
+   "instr": [
+    "pluck",
+    "kalimba",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pluck/kalimba",
+     0,
+     -15,
+     {}
+    ],
+    [
+     "es",
+     "fit/hit/bamboo_tok",
+     0.16,
+     -12,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 17,
+   "id": "brick",
+   "name": "Brick Toy",
+   "say": "Brick Toy",
+   "tagline": "Disusun dari balok mainan.",
+   "aliases": [
+    "brick",
+    "lego",
+    "balok mainan"
+   ],
+   "feel": "main-main, ceria",
+   "instr": [
+    "glock",
+    "sq25",
+    "tri",
+    "tick"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_lego",
+     0,
+     -6,
+     {}
+    ],
+    [
+     "es",
+     "click/snap",
+     0.1,
+     -13,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 18,
+   "id": "tiltshift",
+   "name": "Tilt-Shift Miniature",
+   "say": "Tilt-Shift Miniature",
+   "tagline": "Dunia jadi kayak miniatur.",
+   "aliases": [
+    "tilt shift",
+    "miniatur"
+   ],
+   "feel": "manis, imut, santai",
+   "instr": [
+    "pluck",
+    "pluck",
+    "tri",
+    "soft"
+   ],
+   "accent": [
+    [
+     "es",
+     "shutter/film",
+     0,
+     -8,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 19,
+   "id": "lowpoly",
+   "name": "Low-poly Island",
+   "say": "Low-poly Island",
+   "tagline": "Dibentuk dari segitiga-segitiga.",
+   "aliases": [
+    "low poly",
+    "segitiga"
+   ],
+   "feel": "modern, ringan, tenang",
+   "instr": [
+    "sine",
+    "fm",
+    "sine",
+    "tick"
+   ],
+   "accent": [
+    [
+     "es",
+     "pro_zip/up",
+     -0.05,
+     -15,
+     {}
+    ],
+    [
+     "es",
+     "mallet/glock",
+     0.1,
+     -14,
+     {}
+    ]
+   ]
+  },
+  {
+   "n": 20,
+   "id": "popup",
+   "name": "Paper Pop-up Book",
+   "say": "Paper Pop-up Book",
+   "tagline": "Buku kertas yang berdiri.",
+   "aliases": [
+    "pop up",
+    "buku pop-up"
+   ],
+   "feel": "magis, ceria, bercerita",
+   "instr": [
+    "glock",
+    "kalimba",
+    "tri",
+    "tick"
+   ],
+   "accent": [
+    [
+     "ov",
+     "ov_paper",
+     0,
+     -9,
+     {
+      "start": 1.0,
+      "dur": 1.0
+     }
+    ],
+    [
+     "es",
+     "ui_pop/boop",
+     0.15,
+     -14,
+     {}
+    ]
+   ]
+  }
+ ]
+}

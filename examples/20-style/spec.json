@@ -1,0 +1,142 @@
+{
+ "slug": "20-style-video-motion",
+ "title": "20 Style Video Motion",
+ "lang": "id",
+ "style": "campur",
+ "mood": "ceria",
+ "intro": {
+  "text": "20 style video motion yang bisa kamu gunakan",
+  "say": "Dua puluh style video motion... yang bisa kamu gunakan!"
+ },
+ "items": [
+  {
+   "name": "Whiteboard Explainer",
+   "tag": "Kayak guru nulis di papan.",
+   "say": "Whiteboard Explainer! Kayak guru nulis di papan.",
+   "obstacle": 0
+  },
+  {
+   "name": "Crayon Picture Book",
+   "tag": "Gambar buku anak-anak.",
+   "say": "Crayon Picture Book. Gambar buku anak-anak.",
+   "obstacle": 1
+  },
+  {
+   "name": "Watercolor Brush",
+   "tag": "Lembut, catnya meleber.",
+   "say": "Watercolor Brush. Lembut, catnya meleber.",
+   "obstacle": 2
+  },
+  {
+   "name": "Chinese Ink Wash",
+   "tag": "Tinta hitam ala lukisan klasik.",
+   "say": "Chinese Ink Wash. Tinta hitam ala lukisan klasik.",
+   "obstacle": 3
+  },
+  {
+   "name": "Risograph Print",
+   "tag": "Cetakan zine, warnanya mencolok.",
+   "say": "Risograph Print. Cetakan zine, warnanya mencolok.",
+   "obstacle": 4
+  },
+  {
+   "name": "Woodcut Print",
+   "tag": "Goresan kayu yang tegas.",
+   "say": "Woodcut Print. Goresan kayu yang tegas.",
+   "obstacle": 5
+  },
+  {
+   "name": "Swiss Motion Graphics",
+   "tag": "Rapi, tegas, penuh grid.",
+   "say": "Swiss Motion Graphics. Rapi, tegas, penuh grid.",
+   "obstacle": 6
+  },
+  {
+   "name": "Art Deco",
+   "tag": "Mewah ala tahun dua puluhan.",
+   "say": "Art Deco. Mewah ala tahun dua puluhan.",
+   "obstacle": 7
+  },
+  {
+   "name": "Blueprint",
+   "tag": "Cetak biru ala insinyur.",
+   "say": "Blueprint. Cetak biru ala insinyur.",
+   "obstacle": 0
+  },
+  {
+   "name": "Stained Glass",
+   "tag": "Kaca patri warna-warni.",
+   "say": "Stained Glass. Kaca patri warna-warni.",
+   "obstacle": 1
+  },
+  {
+   "name": "Pixel RPG 16-bit",
+   "tag": "Berasa main game jadul.",
+   "say": "Pixel RPG sixteen bit! Berasa main game jadul.",
+   "obstacle": 2
+  },
+  {
+   "name": "Rubber Hose Cartoon",
+   "tag": "Kartun lawas, badannya kenyal.",
+   "say": "Rubber Hose Cartoon! Kartun lawas... badannya kenyal.",
+   "obstacle": 3
+  },
+  {
+   "name": "80s Cel Anime",
+   "tag": "Anime retro tahun delapan puluhan.",
+   "say": "Eighties Cel Anime! Anime retro tahun delapan puluhan.",
+   "obstacle": 4
+  },
+  {
+   "name": "Mid-century Cartoon",
+   "tag": "Kartun datar yang klasik.",
+   "say": "Mid-century Cartoon. Kartun datar yang klasik.",
+   "obstacle": 5
+  },
+  {
+   "name": "Red Paper-cut",
+   "tag": "Kertas merah yang digunting.",
+   "say": "Red Paper-cut. Kertas merah yang digunting.",
+   "obstacle": 6
+  },
+  {
+   "name": "Ukiyo-e",
+   "tag": "Cetak kayu Jepang klasik.",
+   "say": "Ukiyo-e. Cetak kayu Jepang klasik.",
+   "obstacle": 7
+  },
+  {
+   "name": "Brick Toy",
+   "tag": "Disusun dari balok mainan.",
+   "say": "Brick Toy! Disusun dari balok mainan.",
+   "obstacle": 0
+  },
+  {
+   "name": "Tilt-Shift Miniature",
+   "tag": "Dunia jadi kayak miniatur.",
+   "say": "Tilt-Shift Miniature. Dunia jadi kayak miniatur.",
+   "obstacle": 1
+  },
+  {
+   "name": "Low-poly Island",
+   "tag": "Dibentuk dari segitiga-segitiga.",
+   "say": "Low-poly Island. Dibentuk dari segitiga-segitiga.",
+   "obstacle": 2
+  },
+  {
+   "name": "Paper Pop-up Book",
+   "tag": "Buku kertas yang berdiri.",
+   "say": "Paper Pop-up Book! Buku kertas yang berdiri.",
+   "obstacle": 3
+  }
+ ],
+ "cta": {
+  "say": "Style favoritmu nomor berapa? Tulis di komentar. Dan follow Artosku... biar Minyam terus jatuh ke style yang baru!",
+  "head1": "Style favoritmu",
+  "head2": "nomor berapa?",
+  "mid": "Tulis di komentar.",
+  "button": "Follow Artosku",
+  "sub": "Biar Minyam terus jatuh ke style yang baru.",
+  "footer": "Catat keuanganmu bareng Minyam"
+ }
+}
