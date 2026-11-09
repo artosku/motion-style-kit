@@ -13,4 +13,7 @@ def put(src, dst):
 put(os.path.join(KIT, 'skill', 'SKILL.template.md'), os.path.join(dest, 'SKILL.md'))
 for f in os.listdir(os.path.join(KIT, 'skill', 'guides')):
     put(os.path.join(KIT, 'skill', 'guides', f), os.path.join(dest, 'guides', f))
-print('terpasang:', dest.replace(chr(92), '/'), '| ketik /motion-style di Claude Code (buka sesi baru kalau belum muncul)')
+lst = os.path.join(dest_root, 'motion-style-list')
+if os.path.isdir(lst): shutil.rmtree(lst)
+os.makedirs(lst); put(os.path.join(KIT, 'skill', 'LIST.template.md'), os.path.join(lst, 'SKILL.md'))
+print('terpasang:', dest.replace(chr(92), '/'), '| ketik /motion-style dan /motion-style-list di Claude Code (buka sesi baru kalau belum muncul)')

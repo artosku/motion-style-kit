@@ -28,7 +28,7 @@ Bikin video motion dari satu baris: `/motion-style <style> <topik>`.
 | Folder | Isi |
 |---|---|
 | `AGENT_SETUP.md` | satu file yang dibaca agent untuk memasang semuanya |
-| `skill/` | perintah `/motion-style` dan panduan kualitasnya |
+| `skill/` | perintah `/motion-style`, `/motion-style-list`, dan panduan kualitasnya |
 | `engine/` | mesin gambar (Minyam, 20 style, panel, transisi, layar akhir) |
 | `render/` | alat render dan pengatur loudness |
 | `assets/` | efek suara dan katalog style |

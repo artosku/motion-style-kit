@@ -34,7 +34,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - Jangan render penuh sekarang.
 
 ## Langkah 6. Pesan akhir (poin-poin)
-- Sudah siap. Ketik `/motion-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul).
+- Sudah siap. Ketik `/motion-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul). Lihat semua style: `/motion-style-list`.
 - Contoh: `/motion-style kertas 5 tips hemat jajan`. Style boleh dikosongkan, nanti ditawari pilihan.
 - Hasil tersimpan di `~/Videos/video-style/<nama>/` (path lengkap disebut tiap selesai).
 - Satu video 30 detik butuh sekitar 1-2 menit render.
