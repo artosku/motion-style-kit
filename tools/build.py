@@ -25,7 +25,8 @@ def main(work):
     spec = load_spec(work); items = spec['items']; n = len(items)
     D, real = load_durs(work, spec)
     sids = resolve_styles(spec, n)
-    T, t = [], INTRO_END
+    intro_end = round(max(INTRO_END, 0.35 + D['intro'] + 0.5), 3)   # intro lebih panjang dari 3,7 s: style pertama menunggu
+    T, t = [], intro_end
     for i in range(1, n + 1):
         T.append(round(t, 3)); t += max(2.4, D[f's{i:02d}'] + 0.55)
     cta_start = round(t, 3); cta_voice = round(cta_start + 0.55, 3)
@@ -41,7 +42,7 @@ def main(work):
     cfgp = os.path.join(KIT, 'config.json'); cfg = json.load(open(cfgp, encoding='utf-8')) if os.path.exists(cfgp) else {}
     c.setdefault('button', 'Follow ' + (cfg.get('handle') or 'Artosku')); c.setdefault('footer', 'Catat keuanganmu bareng Minyam'); c.setdefault('sub', '')
     music = {'mood': spec.get('mood', 'ceria'), 'bpm': spec.get('bpm'), 'key': spec.get('key')}
-    tl = {'introEnd': INTRO_END, 'T': T, 'ctaStart': cta_start, 'total': total, 'trHalf': 0.3, 'title': spec['title'], 'durReal': real,
+    tl = {'introEnd': intro_end, 'T': T, 'ctaStart': cta_start, 'total': total, 'trHalf': 0.3, 'title': spec['title'], 'durReal': real,
           'voice': {'intro': 0.35, **{f's{i:02d}': T[i - 1] + 0.05 for i in range(1, n + 1)}, 'cta': cta_voice},
           'styles': sids, 'styleIds': [STYLES[s]['id'] for s in sids], 'names': [it['name'] for it in items], 'tags': [it.get('tag', '') for it in items],
           'obs': [round(T[i] + 0.35, 3) for i in range(n)], 'obsKind': [int(it.get('obstacle', i)) % 8 for i, it in enumerate(items)], 'tr': tr,
