@@ -1,5 +1,6 @@
 """Pintu masuk semua perintah.   python tools/kit.py <perintah> [folder] [opsi]
-Perintah: doctor | setup | install-skill | styles [--lemo] | new <slug> | build | voice | ingest | mix | render | mux | check | shots | all"""
+Perintah: doctor | setup | install-skill | styles [--lemo] | find <teks> | lemo [deps [voice] [music]] | vo <proyek> script|ingest|cartesia|elevenlabs | new <slug>
+Jalur demo Minyam: build | voice | ingest | mix | render | mux | check | shots | all"""
 import os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kitlib import KIT, STYLES, home_videos, load_spec, run_py_in_venv
@@ -86,10 +87,18 @@ def main():
     if not a:
         print(__doc__); return
     c, rest = a[0], a[1:]
-    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new') else None
+    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new', 'find', 'lemo', 'vo', 'install-skill') else None
     if c == 'doctor': sys.exit(0 if doctor() else 1)
     elif c == 'setup': setup()
     elif c == 'install-skill': py('install_skill.py', *rest)
+    elif c == 'find':
+        from kitlib import lemo_find
+        r = lemo_find(' '.join(rest))
+        if not r: print('tidak ketemu; lihat: python tools/kit.py styles')
+        for x in r[:5]: print(f"{x['n']:2d}. {x['slug']:22s} {x['name']} [{x['cat']}] {x['tagline']}")
+    elif c == 'lemo':
+        sh(['sh', os.path.join(T, 'lemo-setup.sh'), *rest])
+    elif c == 'vo': py('vo.py', *rest)
     elif c == 'styles' and '--lemo' in rest:
         import json
         L = json.load(open(os.path.join(KIT, 'assets', 'lemo-styles.json'), encoding='utf-8')); cat = None

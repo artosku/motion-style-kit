@@ -4,9 +4,8 @@ Baris dengan file sendiri (voices_el/s16.mp3, dst.) menggantikan hasil potongan.
 import os, re, sys, json, shutil, difflib
 import numpy as np, soundfile as sf
 from faster_whisper import WhisperModel
-from kitlib import load_spec, ids_of
-HERE = os.path.abspath(sys.argv[1]); SPEC = load_spec(HERE); IDS = ids_of(SPEC); NL = len(IDS)
-LANGW = SPEC.get('lang', 'id')
+from kitlib import script_of
+HERE = os.path.abspath(sys.argv[1]); IDS, _SAY, LANGW = script_of(HERE); NL = len(IDS)
 x, sr = sf.read(os.path.join(HERE, 'voices_el', 'semua.mp3'), dtype='float64'); x = x.mean(axis=1) if x.ndim > 1 else x
 print('durasi', round(len(x) / sr, 2), 's')
 norm = lambda w: re.sub(r'[^a-z0-9]', '', w.lower())

@@ -19,9 +19,9 @@ Tampilkan daftar style untuk user. Jangan membuat video.
   - **21-40, berita, dokumenter, dan data:** caption news, newsreel, countdown, investigasi, telestrator, satelit, lidar, teardown, mikroskop, impasto, one-line, urban sketch, papan tulis, dst.
   - **41-60, cetak, sains, dan tampilan digital:** shadow puppetry, halftone, engraving, silkscreen, ASCII, hologram, transit map, circuit board, HD-2D, dst.
   - **61-66:** game show, film bisu, liminal found footage, glass product, memphis, desktop.
-- Tandai ★ untuk yang paling kuat: watercolor, pixel, hose, anime, swiss.
+- Tandai ★ untuk yang paling kuat di demo: watercolor, pixel, hose, anime, swiss.
 - Jelaskan jujur dalam 3 poin:
-  - Semua 66 bisa langsung dibuat lewat `/motion-style`, dengan Minyam, dalam 16:9 atau potret 9:16.
-  - Mesin hanya 2D: style bernuansa 3D (isometrik, HD-2D, brick, low-poly) adalah pendekatan 2D.
+  - Semua 66 bisa dipakai lewat `/motion-style` untuk video bebas tentang topik apa pun, dalam 16:9 atau potret 9:16 (dibuat lewat lemo-opuscar).
+  - Video contoh Minyam jatuh di repo hanya demo untuk memamerkan style.
   - Style yang masih lemah ada di kolom "Catatan jujur" pada `guides/style.md` (misalnya Shadow Puppetry, Copperplate Engraving, ASCII, Dark Tech Keynote, Chalkboard).
 - Tutup dengan: "Pakai: `/motion-style <style> <topik>`, contoh `/motion-style pixel 5 tips hemat jajan`. Style boleh dikosongkan, boleh pakai nomor."

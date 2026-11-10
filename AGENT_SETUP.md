@@ -32,6 +32,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - `python tools/kit.py new uji` (mencetak folder), salin `examples/20-style/spec.json` ke folder itu.
 - `python tools/kit.py build <folder>`, lalu `python tools/kit.py shots <folder> 12 41`. Buka satu gambar dari `<folder>/out/shots/` dan pastikan ada daftar kiri + ayam kanan.
 - Jangan render penuh sekarang.
+- Pasang juga pustaka style: `python tools/kit.py lemo` (mengunduh lemo-opuscar ke `~/lemo-opuscar`), lalu `python tools/kit.py lemo deps` (izin dulu; beberapa menit). Uji: `python tools/kit.py find pixel` harus menampilkan style.
 
 ## Langkah 6. Pesan akhir (poin-poin)
 - Sudah siap. Ketik `/motion-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul). Lihat semua style: `/motion-style-list`.
@@ -39,7 +40,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - Hasil tersimpan di `~/Videos/video-style/<nama>/` (path lengkap disebut tiap selesai).
 - Satu video 30 detik butuh sekitar 1-2 menit render.
 - Mau versi potret 9:16 (TikTok/Reels, dengan area aman kanan dan bawah)? Tambahkan `--portrait` pada `render`, `mux`, dan `shots`.
-- Batasan: karakter Minyam; mesin hanya 2D.
+- Minyam hanya dipakai di video demo. Batasan: kualitas tiap style beda-beda; lihat `/motion-style-list`.
 
 ## Kalau gagal
 - `skill/guides/kualitas.md` punya tabel kegagalan umum. Menjalankan ulang setup aman.

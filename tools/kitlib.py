@@ -115,3 +115,31 @@ def load_env():
             ln = ln.strip()
             if ln and not ln.startswith('#') and '=' in ln:
                 k, v = ln.split('=', 1); os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+def script_of(work):
+    """(ids, say, lang) untuk suara. Proyek lama: spec.json. Proyek bebas (lemo-opuscar): lines.json = [{"id","text","lang"?}, ...]."""
+    if os.path.exists(os.path.join(work, 'spec.json')):
+        spec = load_spec(work); return ids_of(spec), say_of(spec), spec.get('lang', 'id')
+    p = os.path.join(work, 'lines.json')
+    if not os.path.exists(p):
+        sys.exit(f'Tidak ada spec.json atau lines.json di {work}.')
+    L = json.load(open(p, encoding='utf-8'))
+    return [x['id'] for x in L], {x['id']: x['text'] for x in L}, (L[0].get('lang') or 'id')[:2]
+
+
+def lemo_find(text):
+    """Cocokkan sebutan user (nomor 1-66, id, nama, sebutan umum) ke style lemo-opuscar. Balikkan daftar {n, slug, name, cat} (paling cocok dulu)."""
+    L = json.load(open(os.path.join(ASSETS, 'lemo-styles.json'), encoding='utf-8'))
+    by = {norm(x['name']): x for x in L}
+    alt = {'pixelrpg16bit': '16-bit Pixel RPG', 'rubberhosecartoon': '1930s Rubber Hose Cartoon', 'lowpolyisland': 'Low-poly Isometric Island'}
+    def lemo_of(s):
+        k = norm(s['name']); k = norm(alt[k]) if k in alt else k; return by.get(k) or next((x for x in L if norm(x['name']).startswith(k) or k.startswith(norm(x['name']))), None)
+    key = norm(text); out = []
+    for s in STYLES:
+        x = lemo_of(s)
+        if not x: continue
+        al = [norm(a) for a in s['aliases']]
+        sc = 3 if key in (str(s['n']), norm(s['id']), norm(s['name']), norm(x['slug'])) or key in al else (1 if key and (key in norm(s['name']) or any(key in a for a in al) or key in norm(x['slug'])) else 0)
+        if sc: out.append((sc, {'n': s['n'], 'slug': x['slug'], 'name': s['name'], 'cat': x['cat'], 'tagline': s['tagline']}))
+    out.sort(key=lambda o: -o[0]); return [o[1] for o in out]

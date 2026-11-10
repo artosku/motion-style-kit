@@ -3,7 +3,7 @@
 Kunci ada di .env kit: CARTESIA_API_KEY + CARTESIA_VOICE_ID, atau ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID."""
 import io, json, os, sys, urllib.error, urllib.request
 import numpy as np, soundfile as sf
-from kitlib import load_env, load_spec, say_of, ids_of
+from kitlib import load_env, script_of
 
 LANG = {'id': 'id', 'en': 'en', 'ms': 'ms', 'ja': 'ja', 'ko': 'ko', 'es': 'es', 'fr': 'fr', 'de': 'de', 'pt': 'pt', 'hi': 'hi', 'zh': 'zh'}
 
@@ -44,13 +44,13 @@ def elevenlabs(text, lang, first):
 
 
 def main(work, provider, only=None):
-    load_env(); spec = load_spec(work); lang = spec.get('lang', 'id'); say = say_of(spec)
+    load_env(); ids, say, lang = script_of(work)
     if provider == 'cartesia': need('CARTESIA_API_KEY', 'CARTESIA_VOICE_ID'); fn = cartesia
     elif provider == 'elevenlabs': need('ELEVENLABS_API_KEY', 'ELEVENLABS_VOICE_ID'); fn = elevenlabs
     else: sys.exit('provider harus cartesia atau elevenlabs')
     out = os.path.join(work, 'voices'); os.makedirs(out, exist_ok=True)
     dp = os.path.join(out, 'dur.json'); dur = json.load(open(dp)) if os.path.exists(dp) else {}
-    for k in ids_of(spec):
+    for k in ids:
         if only and k not in only: continue
         raw = fn(say[k], lang, k == 'intro'); tmp = os.path.join(out, k + '.tmp')
         open(tmp, 'wb').write(raw); x, sr = sf.read(tmp); os.remove(tmp); x = trim(x, sr)

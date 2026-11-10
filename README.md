@@ -4,13 +4,13 @@
 
 # motion-style-kit
 
-Bikin video motion dari satu baris: `/motion-style <style> <topik>`.
+Bikin video motion tentang **topik apa saja** dalam satu dari **66 style** dari satu baris: `/motion-style <style> <topik>`.
 
-- Maskot **Minyam** jatuh bebas melewati rintangan, melewati poin-poin topikmu satu per satu.
-- **66 style gambar** (dari koleksi lemo-opuscar): kertas, cat air, pixel, kartun lawas, anime 80an, berita, infografik, cetak, sains, dan lainnya.
-- Narasi (opsional), musik, efek suara, caption, dan ajakan (CTA) dibuat otomatis sesuai topik.
+- AI agent menyutradarai filmnya (cerita, adegan, data) memakai pustaka **lemo-opuscar**, lalu membuat narasi, musik, efek suara, dan caption.
+- Kit ini hanya pembungkus: mengunduh dan memasang pustaka, mencocokkan nama style ("kertas", "8 bit", nomor 1-66), menyiapkan suara (edge-tts Indonesia gratis, ElevenLabs, Cartesia), dan merapikan hasil.
 - Kamu **tidak perlu menyebut nama alat apa pun**. Semuanya sudah diurus.
-- Hasil: MP4 **16:9** (YouTube, presentasi) dan **9:16** (TikTok, Reels, Shorts) dengan area aman untuk tombol dan caption.
+- Hasil: MP4 **16:9** (YouTube, presentasi) dan/atau **9:16** (TikTok, Reels, Shorts) dengan area aman untuk tombol dan caption.
+- **Minyam** (maskot ayam) hanya dipakai di video contoh di bawah, untuk memamerkan 66 style secara berurutan. Isi videomu tidak memakai Minyam.
 
 ## Cara pakai
 1. Kirim link repo ini ke AI agent-mu (Claude Code) dan ketik **"setup"**.
@@ -21,9 +21,10 @@ Bikin video motion dari satu baris: `/motion-style <style> <topik>`.
    - `/motion-style kertas 5 tips hemat jajan`
    - `/motion-style cat air manfaat tidur cukup`
    - `/motion-style 5 cara belajar efektif` (tanpa style: kamu ditawari pilihan)
+4. Agent bertanya sekali (panjang, 16:9 atau 9:16, suara, bahan sendiri), lalu membuat videonya. Pertama kali ada unduhan pustaka dan alat render (beberapa menit).
 
-## Contoh video
-Semua dibuat dengan kit ini: Minyam jatuh melewati style satu per satu. Versi di sini sudah dikecilkan (960x540 dan 540x960) supaya repo ringan. Klik untuk menonton.
+## Contoh video (demo style)
+Minyam jatuh melewati style satu per satu, dibuat dengan engine demo di `engine/`. Versi di sini sudah dikecilkan (960x540 dan 540x960) supaya repo ringan. Klik untuk menonton.
 
 | Video | Style | Landscape 16:9 | Potret 9:16 |
 |---|---|---|---|
@@ -59,17 +60,17 @@ Layar 1080x1920: logo, judul, dan penanda progres di atas; area animasi di tenga
 |---|---|
 | `AGENT_SETUP.md` | satu file yang dibaca agent untuk memasang semuanya |
 | `skill/` | perintah `/motion-style`, `/motion-style-list`, dan panduan kualitasnya |
-| `engine/` | mesin gambar (Minyam, 66 style, panel, transisi, layar akhir, tata letak potret) |
+| `engine/` | mesin demo Minyam (66 style, panel, transisi, layar akhir, tata letak potret) |
+| `tools/lemo-setup.sh` | pengunduh pustaka lemo-opuscar (salinan dari lemo-opuscar, MIT) |
 | `render/` | alat render dan pengatur loudness |
 | `assets/` | efek suara dan katalog style |
 | `tools/` | skrip yang mengerjakan pekerjaan berat (hemat token AI) |
 | `examples/` | spec, naskah, dan video contoh (landscape dan potret) |
 
 ## Batasan saat ini
-- Karakter hanya Minyam. Mesin hanya 2D: style 3D (isometrik, HD-2D, brick, low-poly) adalah pendekatan 2D.
-- Style yang masih lemah: Shadow Puppetry, Paper-cut Lightbox, Copperplate Engraving, ASCII / CRT, Dark Tech Keynote, Chalkboard, dan beberapa lain (ayam di riso, woodcut, blueprint, paper-cut juga paling lemah).
-- Satu video maksimal 30 poin.
-- Musik `ceria` ditulis tangan dan sudah didengar; mood lain dibuat otomatis dan belum sehalus itu.
+- Video bebas dibuat AI agent per film (bukan cetakan): hasil dan lama pembuatan bergantung topik dan style; film 45 detik bisa butuh puluhan menit dan banyak token.
+- Jalur video bebas dengan perintah baru ini **belum diuji dari awal sampai akhir** pada banyak style.
+- Video demo Minyam: engine 2D saja; style 3D di demo adalah pendekatan 2D; beberapa style demo lemah (Shadow Puppetry, Copperplate Engraving, ASCII, Dark Tech Keynote, Chalkboard).
 - Jalur suara lewat API belum diuji dengan kunci sungguhan. Cek lisensi ElevenLabs/Cartesia sebelum video dipakai komersial.
 - Repo ini **private** untuk uji coba.
 

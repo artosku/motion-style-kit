@@ -5,5 +5,5 @@
   "type": "module",
   "description": "Video motion Minyam (jatuh bebas) dalam 20 style, dibuat penuh dari kode. Dipakai lewat perintah /motion-style.",
   "engines": { "node": ">=20" },
-  "dependencies": { "playwright-core": "^1.63.0" }
+  "dependencies": { "playwright-core": "1.63.0" }
 }

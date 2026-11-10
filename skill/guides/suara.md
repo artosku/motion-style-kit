@@ -1,5 +1,22 @@
 # Suara narasi
 
+## Jalur utama: video bebas (lemo-opuscar)
+Video **tetap jadi tanpa suara** (musik, efek, teks di layar). Suara itu pilihan. Naskah ditulis ke `<proyek>/lines.json`: `[{"id":"s01","text":"...","lang":"id"}, ...]` (satu id per ucapan; angka dieja di `say`, ditulis angka di teks layar). Hasil semua jalur sama: `<proyek>/voices/<id>.wav` + `dur.json`, yang dipakai timeline film.
+
+| Jalur | Kapan | Langkah |
+|---|---|---|
+| **1. Suara Indonesia gratis (edge-tts Microsoft)** ★ | tidak punya akun apa pun; perlu internet | pasang `edge-tts` ke venv lemo (kecil; izin dulu): `uv pip install --python "$LIB/.venv/Scripts/python.exe" edge-tts` (Windows) atau `"$LIB/.venv/bin/python" -m pip install edge-tts`. Isi `"voice":"id-ID-ArdiNeural"` (pria) atau `"id-ID-GadisNeural"` (wanita) per baris, lalu `cd "$LIB" && .venv/bin/python core/tts/tts_zh.py <proyek>/lines.json <proyek>/voices` |
+| **2. API** | `.env` kit berisi kunci + ID suara (`kit.py doctor`, baris "suara lewat API siap") | `python "{{KIT}}/tools/kit.py" vo <proyek> elevenlabs` atau `cartesia` |
+| **3. Situs ElevenLabs** | punya akun, belum punya kunci API | `kit.py vo <proyek> script` menulis `<proyek>/script_elevenlabs.txt`; ikuti bagian B di bawah (generate satu kali, taruh di `<proyek>/voices_el/semua.mp3`), lalu `kit.py vo <proyek> ingest` |
+| **4. Tanpa suara** | tidak mau | lewati; timeline memakai durasi perkiraan |
+
+- Jangan meminta kunci API di chat: salin `.env.example` jadi `.env` di folder kit, user mengisi sendiri.
+- Periksa ketentuan lisensi: layanan Microsoft (edge-tts) dan ElevenLabs/Cartesia; video komersial perlu dicek user. Katakan jujur bahwa kamu tidak bisa mendengar hasilnya.
+- Suara Indonesia terdengar wajar di edge-tts, tapi tetap suruh user mendengarkan sebelum memposting; baris yang salah baca bisa diganti dengan menulis ulang ejaannya (misal nama asing).
+
+---
+## Jalur demo Minyam (spec.json)
+
 Video **tetap jadi tanpa suara** (musik, efek, dan teks di layar). Suara itu pilihan. Tanya user sekali, lalu ikuti jalur yang dipilih.
 
 ## Pilih jalur (cek dulu `python "{{KIT}}/tools/kit.py" doctor`, baris "suara lewat API siap")
