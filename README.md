@@ -27,7 +27,7 @@ Semua dibuat dengan kit ini: Minyam jatuh melewati style satu per satu. Versi di
 
 | Video | Style | Landscape 16:9 | Potret 9:16 |
 |---|---|---|---|
-| #1 | 1-20 | [20-style-video-motion.mp4](examples/videos/landscape/20-style-video-motion.mp4) | belum ada |
+| #1 | 1-20 | [20-style-video-motion.mp4](examples/videos/landscape/20-style-video-motion.mp4) | [potret](examples/videos/portrait/20-style-video-motion-portrait.mp4) |
 | #2 | 21-40 | [20-style-video-motion-2.mp4](examples/videos/landscape/20-style-video-motion-2.mp4) | [potret](examples/videos/portrait/20-style-video-motion-2-portrait.mp4) |
 | #3 | 41-60 | [20-style-video-motion-3.mp4](examples/videos/landscape/20-style-video-motion-3.mp4) | [potret](examples/videos/portrait/20-style-video-motion-3-portrait.mp4) |
 | #4 | 61-66 | [6-style-video-motion-4.mp4](examples/videos/landscape/6-style-video-motion-4.mp4) | [potret](examples/videos/portrait/6-style-video-motion-4-portrait.mp4) |
