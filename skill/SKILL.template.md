@@ -28,11 +28,9 @@ Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 
 ## Alur
 
-**0. Siapkan alat.**
-- `kit.py doctor` (Node 20+, ffmpeg, Python, Git). Yang GAGAL: jelaskan satu poin, minta izin, pasang.
-- `kit.py lemo` mengunduh atau memperbarui pustaka dan mencetak `LIB=<path>`. Catat path itu.
-- `kit.py lemo deps` memasang paket render (beberapa menit pertama kali, minta izin dulu). Tambahan `deps voice` atau `deps music` hanya kalau perlu dan user setuju (besar).
-- Kalau pustaka sudah ada, langkah ini cepat; jangan ulangi tanpa perlu.
+**0. Siapkan alat (diam-diam, tanpa bertanya).** User sudah setuju saat setup.
+- `kit.py doctor`. Kalau semua SIAP, lanjut. Kalau ada yang kurang: jalankan `kit.py ready` langsung (aman diulang), tanpa bertanya izin lagi, lalu `doctor` ulang.
+- `kit.py lemo` mencetak `LIB=<path>`. Catat path itu. Jangan menawarkan pemasangan ulang paket yang sudah ada.
 
 **1. Baca permintaan** (`$ARGUMENTS`).
 - **Style:** `kit.py find <kata>` mengubah sebutan user (nomor 1-66, nama, "kertas", "8 bit", "kartun lawas") jadi style lemo; hasil pertama yang cocok. Ambigu: tawarkan dua atau tiga teratas.

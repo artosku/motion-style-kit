@@ -1,5 +1,5 @@
 """Pintu masuk semua perintah.   python tools/kit.py <perintah> [folder] [opsi]
-Perintah: doctor | setup | install-skill | styles [--lemo] | find <teks> | lemo [deps [voice] [music]] | media <proyek> <kata> [--video] | vo <proyek> script|ingest|cartesia|elevenlabs | new <slug>
+Perintah: doctor | setup | ready (pasang semuanya sekali jalan) | install-skill | styles [--lemo] | find <teks> | lemo [deps [voice] [music]] | media <proyek> <kata> [--video] | vo <proyek> script|ingest|cartesia|elevenlabs | new <slug>
 Jalur demo Minyam: build | voice | ingest | mix | render | mux | check | shots | all"""
 import os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -99,7 +99,7 @@ def main():
     if not a:
         print(__doc__); return
     c, rest = a[0], a[1:]
-    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new', 'find', 'lemo', 'vo', 'media', 'install-skill') else None
+    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new', 'find', 'lemo', 'ready', 'vo', 'media', 'install-skill') else None
     if c == 'doctor': sys.exit(0 if doctor() else 1)
     elif c == 'setup': setup()
     elif c == 'install-skill': py('install_skill.py', *rest)
@@ -110,6 +110,18 @@ def main():
         for x in r[:5]: print(f"{x['n']:2d}. {x['slug']:22s} {x['name']} [{x['cat']}] {x['tagline']}")
     elif c == 'lemo':
         sh(['sh', os.path.join(T, 'lemo-setup.sh'), *rest])
+    elif c == 'ready':
+        # pasang SEMUANYA sekali jalan (kit + lemo + suara + musik + edge-tts) supaya /motion-style tidak perlu bertanya izin lagi
+        import shutil
+        setup()
+        sh(['sh', os.path.join(T, 'lemo-setup.sh')])
+        sh(['sh', os.path.join(T, 'lemo-setup.sh'), 'deps', 'voice', 'music'])
+        lib = os.path.join(os.path.expanduser('~'), 'lemo-opuscar')
+        vpy = next((p for p in (os.path.join(lib, '.venv', 'Scripts', 'python.exe'), os.path.join(lib, '.venv', 'bin', 'python')) if os.path.exists(p)), None)
+        if vpy and shutil.which('uv'): sh(['uv', 'pip', 'install', '--python', vpy, 'edge-tts'])
+        elif vpy: sh([vpy, '-m', 'pip', 'install', 'edge-tts'])
+        else: print('! venv lemo tidak ketemu; edge-tts belum terpasang')
+        doctor()
     elif c == 'vo': py('vo.py', *rest)
     elif c == 'media': py('media.py', *rest)
     elif c == 'styles' and '--lemo' in rest:
