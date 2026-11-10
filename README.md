@@ -2,7 +2,7 @@
 > 1. Read `AGENT_SETUP.md` and follow it step by step.
 > 2. Talk to the user in their language, short bullet points, one batch of questions with a default marked ★.
 
-# video-style-kit
+# motion-style-kit
 
 Bikin video motion dari satu baris: `/motion-style <style> <topik>`.
 
