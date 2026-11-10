@@ -10,9 +10,9 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 - Tanya izin sebelum memasang software. Jangan commit atau mengunggah apa pun.
 
 ## Langkah 1. Pasang kit di satu folder tetap
-- Lokasi: `~/.video-style-kit` (Windows: `%USERPROFILE%\.video-style-kit`). Jangan pakai atau tulis ke folder tempat user sedang berada.
-- Belum ada: `git clone <link repo ini> ~/.video-style-kit` (repo private: user harus sudah login GitHub; kalau gagal, minta user mengunduh zip dan bilang "setup folder ini"). Satu poin: "satu folder alat, folder kerjamu tidak disentuh".
-- Sudah ada: `git -C ~/.video-style-kit pull`.
+- Lokasi: `~/.motion-style-kit` (Windows: `%USERPROFILE%\.motion-style-kit`). Jangan pakai atau tulis ke folder tempat user sedang berada.
+- Belum ada: `git clone <link repo ini> ~/.motion-style-kit` (repo private: user harus sudah login GitHub; kalau gagal, minta user mengunduh zip dan bilang "setup folder ini"). Satu poin: "satu folder alat, folder kerjamu tidak disentuh".
+- Sudah ada: `git -C ~/.motion-style-kit pull`.
 - Dari sini semua perintah dijalankan dari folder itu.
 
 ## Langkah 2. Cek dan lengkapi mesin
@@ -35,10 +35,11 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 
 ## Langkah 6. Pesan akhir (poin-poin)
 - Sudah siap. Ketik `/motion-style <style> <topik>` dari folder mana pun (buka sesi baru kalau perintahnya belum muncul). Lihat semua style: `/motion-style-list`.
-- Contoh: `/motion-style kertas 5 tips hemat jajan`. Style boleh dikosongkan, nanti ditawari pilihan.
+- Contoh: `/motion-style kertas 5 tips hemat jajan`. Ada 66 style (nomor 1-66); boleh sebut nama atau nomor. Style boleh dikosongkan, nanti ditawari pilihan.
 - Hasil tersimpan di `~/Videos/video-style/<nama>/` (path lengkap disebut tiap selesai).
 - Satu video 30 detik butuh sekitar 1-2 menit render.
-- Batasan: hanya 16:9, karakter Minyam.
+- Mau versi potret 9:16 (TikTok/Reels, dengan area aman kanan dan bawah)? Tambahkan `--portrait` pada `render`, `mux`, dan `shots`.
+- Batasan: karakter Minyam; mesin hanya 2D.
 
 ## Kalau gagal
 - `skill/guides/kualitas.md` punya tabel kegagalan umum. Menjalankan ulang setup aman.

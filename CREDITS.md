@@ -35,7 +35,7 @@ Narasi dibuat lewat [ElevenLabs](https://elevenlabs.io) atau [Cartesia](https://
 
 ## Teks siap tempel untuk deskripsi video
 ```
-Suara: ElevenLabs. Efek suara: earshot, uisfx, Freesound (CC0). Musik dibuat dengan kode. Dibuat dengan video-style-kit (Artosku).
+Suara: ElevenLabs. Efek suara: earshot, uisfx, Freesound (CC0). Musik dibuat dengan kode. Dibuat dengan motion-style-kit (Artosku).
 ```
 Tidak ada kredit yang **wajib** muncul di video untuk aset yang disertakan; teks di atas hanya sopan santun. Atribusi ElevenLabs bisa diwajibkan oleh paket gratis mereka.
 
