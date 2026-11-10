@@ -31,6 +31,9 @@ Buka lembar kontak itu satu kali (hemat token; jangan memeriksa video frame demi
 
 Urutan lengkap dengan suara: `build` → suara/`ingest` → `build` (jadwal baru dari durasi asli) → `mix` → `render` → `mux` → `check`. Render sekitar 1 sampai 2 menit per 30 detik video tergantung mesin.
 
+## Versi potret 9:16 (kalau user minta TikTok/Reels/Shorts)
+Setelah versi 16:9 jadi (jadwal dan audio sama), jalankan: `render <folder> --portrait` lalu `mux <folder> --portrait`. Hasil: `<folder>/<slug>-portrait.mp4` (1080x1920). Kolom kanan sekitar 175 px dan bawah sekitar 470 px sengaja kosong untuk tombol dan caption aplikasi; bilang itu perkiraan. Lembar contoh potret: `shots <folder> <detik> --portrait`.
+
 ## Kegagalan yang umum
 | Gejala | Penyebab | Perbaikan |
 |---|---|---|

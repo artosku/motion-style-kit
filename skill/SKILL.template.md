@@ -1,6 +1,6 @@
 ---
 name: motion-style
-description: Membuat video motion 16:9 (MP4) dengan maskot Minyam yang jatuh bebas dalam satu dari 20 style gambar (kertas, cat air, pixel, kartun lawas, dst.), lengkap dengan narasi opsional, musik, efek suara, caption, dan ajakan (CTA). Pakai saat user mengetik /motion-style atau minta video motion bergaya tertentu dari sebuah topik.
+description: Membuat video motion (MP4, 16:9 atau potret 9:16) dengan maskot Minyam yang jatuh bebas dalam satu dari 66 style gambar (kertas, cat air, pixel, kartun lawas, berita, infografik, dst.), lengkap dengan narasi opsional, musik, efek suara, caption, dan ajakan (CTA). Pakai saat user mengetik /motion-style atau minta video motion bergaya tertentu dari sebuah topik.
 argument-hint: "[style] <topik>   contoh: /motion-style kertas 5 tips hemat jajan"
 ---
 
@@ -13,7 +13,7 @@ Kamu membuat video motion dari **topik** (dan **style** kalau user menyebutnya).
 Perintah dasar (selalu dengan path penuh): `python "{{KIT}}/tools/kit.py" <perintah> ...`
 
 Panduan detail ada di folder skill ini (`guides/`). **Baca hanya yang dibutuhkan tahap itu**:
-- `guides/style.md`: 20 style, cocok untuk apa, batasannya.
+- `guides/style.md`: 66 style, cocok untuk apa, batasannya.
 - `guides/konsep-naskah.md`: isi `spec.json`, aturan menulis, rintangan.
 - `guides/musik-sfx.md`: mood musik dan daftar efek suara.
 - `guides/suara.md`: narasi (API, situs ElevenLabs, atau tanpa suara).
@@ -33,7 +33,7 @@ Panduan detail ada di folder skill ini (`guides/`). **Baca hanya yang dibutuhkan
 
 **1. Baca permintaan.** Dari `$ARGUMENTS`: style (kata pertama kalau cocok dengan `kit.py styles`, termasuk sebutan umum seperti "kertas", "lego", "8 bit"), topik, dan permintaan tambahan (jumlah poin, durasi, suara, bahasa).
 - **Topik kosong** → tanya topiknya.
-- **Style kosong** → tanya dengan 4 pilihan: 3 style paling cocok untuk topik (lihat `guides/style.md`, tandai ★ yang terbaik) + `campur`. Jangan tampilkan semua 20 kecuali diminta.
+- **Style kosong** → tanya dengan 4 pilihan: 3 style paling cocok untuk topik (lihat `guides/style.md`, tandai ★ yang terbaik) + `campur`. Jangan tampilkan semua 66 kecuali diminta.
 - **Suara**: kalau belum jelas, ikut `guides/suara.md` (cek `doctor`: "suara lewat API siap"). Satu kelompok pertanyaan dengan style bila keduanya kosong.
 - Bawaan kalau user bilang "terserah": 5 poin, mood sesuai topik, tanpa suara kecuali kunci API sudah ada.
 
