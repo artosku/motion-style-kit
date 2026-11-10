@@ -10,18 +10,32 @@ from kitlib import load_env
 KEYS = ('PIXABAY_API_KEY', 'PIXABAY_KEY', 'PIXABAY_API')
 
 
+def win_env(name):
+    """Windows: variabel yang baru dibuat belum masuk ke terminal yang sudah terbuka; baca langsung dari pengaturan Windows."""
+    if os.name != 'nt': return None
+    import winreg
+    for hive, sub in ((winreg.HKEY_CURRENT_USER, 'Environment'), (winreg.HKEY_LOCAL_MACHINE, r'SYSTEM\CurrentControlSet\Control\Session Manager\Environment')):
+        try:
+            with winreg.OpenKey(hive, sub) as k: return winreg.QueryValueEx(k, name)[0]
+        except OSError: pass
+    return None
+
+
 def key():
     load_env()
     for k in KEYS:
-        if os.environ.get(k): return os.environ[k]
+        v = os.environ.get(k) or win_env(k)
+        if v: return v
     sys.exit('Belum ada kunci Pixabay. Isi PIXABAY_API_KEY sebagai variabel lingkungan atau di file .env folder kit (jangan kirim ke chat). Kunci gratis: pixabay.com/api/docs/')
 
 
-def get(url, binary=False):
+def get(url, binary=False, tries=4):
     rq = urllib.request.Request(url, headers={'User-Agent': 'motion-style-kit'})
     try:
         with urllib.request.urlopen(rq, timeout=90) as r: return r.read() if binary else json.load(r)
     except urllib.error.HTTPError as e:
+        if e.code == 429 and tries > 1:                     # kena batas: tunggu sebentar lalu coba lagi
+            time.sleep(8 * (5 - tries) + 6); return get(url, binary, tries - 1)
         sys.exit({400: 'Permintaan ditolak Pixabay (kata kunci atau kunci salah).', 429: 'Terlalu banyak permintaan ke Pixabay (maksimal 100 per menit). Tunggu semenit.'}.get(e.code, f'Pixabay menolak (HTTP {e.code}).'))
     except urllib.error.URLError as e:
         sys.exit(f'Tidak bisa menghubungi Pixabay: {e.reason}')
@@ -48,7 +62,7 @@ def main(a):
     mp = os.path.join(out, 'media.json'); man = json.load(open(mp, encoding='utf-8')) if os.path.exists(mp) else []
     for h in hits:
         if video:
-            v = next((h['videos'][s] for s in ('large', 'medium', 'small') if h['videos'].get(s, {}).get('url')), None)
+            v = next((h['videos'][s] for s in ('medium', 'large', 'small') if h['videos'].get(s, {}).get('url')), None)
             if not v: continue
             src, ext, info = v['url'], 'mp4', f"{v['width']}x{v['height']}, {h.get('duration', '?')} detik"
         else:
@@ -56,7 +70,8 @@ def main(a):
         name = f"pixabay-{'v' if video else 'f'}{h['id']}.{ext}"; path = os.path.join(out, name)
         print(f"{name} | {info} | oleh {h['user']} | {h['tags']} | {h['pageURL']}")
         if lst: continue
-        if not os.path.exists(path): open(path, 'wb').write(get(src, True)); time.sleep(.2)
+        if not os.path.exists(path):
+            data = get(src, True); open(path + '.part', 'wb').write(data); os.replace(path + '.part', path); time.sleep(1)
         if not any(m['file'] == name for m in man):
             man.append({'file': name, 'path': path, 'type': 'video' if video else 'photo', 'info': info, 'by': h['user'], 'page': h['pageURL'], 'tags': h['tags'], 'query': q, 'license': 'Pixabay Content License'})
     if lst: return

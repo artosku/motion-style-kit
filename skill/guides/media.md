@@ -11,7 +11,8 @@ Pakai **hanya kalau user memintanya** (atau topiknya jelas butuh gambar nyata: t
 - `python "{{KIT}}/tools/kit.py" media <proyek> <kata kunci> [--video] [--n 3] [--vertical|--horizontal] [--lang id|en] [--list]`
 - `--list` hanya menampilkan hasil (nama, ukuran, pembuat, tag, tautan) tanpa mengunduh: pakai dulu untuk memilih, lalu unduh yang cocok. Kata kunci bahasa Inggris (`--lang en`) biasanya lebih banyak hasilnya.
 - Hasil: `<proyek>/media/pixabay-<id>.jpg|mp4`, `media/media.json`, dan `media/CREDITS.md` (pembuat dan tautan). Satu pencarian satu topik adegan; jangan mengunduh puluhan file.
-- Batas API: 100 permintaan per menit.
+- Batas API: 100 permintaan per menit; kalau kena batas, alat menunggu dan mencoba lagi sendiri.
+- Ukuran: foto maksimal 1280 px di sisi terpanjang (batas Pixabay untuk kunci biasa), cukup untuk dipakai sebagai bagian adegan, kurang tajam kalau diperbesar memenuhi layar 1080p. Video diambil versi menengah (sekitar 1080p), biasanya 10-25 MB per klip.
 
 ## Memakainya di film
 - Rancang dulu adegan mana yang butuh gambar nyata (bukti, tempat, produk, suasana), jangan menaruh stok di setiap adegan.

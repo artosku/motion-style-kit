@@ -21,6 +21,17 @@ def py(script, *args):
     sh([sys.executable, os.path.join(T, script), *map(str, args)])
 
 
+def _wenv(k):
+    try:
+        import winreg
+        for h, s in ((winreg.HKEY_CURRENT_USER, 'Environment'), (winreg.HKEY_LOCAL_MACHINE, r'SYSTEM\CurrentControlSet\Control\Session Manager\Environment')):
+            try:
+                with winreg.OpenKey(h, s) as r: return winreg.QueryValueEx(r, k)[0]
+            except OSError: pass
+    except ImportError: pass
+    return None
+
+
 def doctor():
     bad = []
 
@@ -55,7 +66,7 @@ def doctor():
         print('  (opsional) faster-whisper belum ada. Hanya perlu untuk memotong rekaman ElevenLabs dari situs dan cek --whisper: pip install -r requirements-voice.txt')
     from kitlib import load_env
     load_env(); prov = [n for n, a_, b_ in (('cartesia', 'CARTESIA_API_KEY', 'CARTESIA_VOICE_ID'), ('elevenlabs', 'ELEVENLABS_API_KEY', 'ELEVENLABS_VOICE_ID')) if os.environ.get(a_) and os.environ.get(b_)]
-    print('  foto/video Pixabay siap:', 'ya' if any(os.environ.get(k) for k in ('PIXABAY_API_KEY', 'PIXABAY_KEY', 'PIXABAY_API')) else 'belum ada kunci (opsional; hanya kalau user mau bahan foto/video)')
+    print('  foto/video Pixabay siap:', 'ya' if any(os.environ.get(k) or _wenv(k) for k in ('PIXABAY_API_KEY', 'PIXABAY_KEY', 'PIXABAY_API')) else 'belum ada kunci (opsional; hanya kalau user mau bahan foto/video)')
     print('  suara lewat API siap:', ', '.join(prov) if prov else 'belum ada (boleh: suara lewat situs ElevenLabs, atau tanpa suara)')
     print('SIAP' if not bad else 'BELUM SIAP: ' + ', '.join(bad))
     return not bad
