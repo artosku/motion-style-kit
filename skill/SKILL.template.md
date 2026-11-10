@@ -15,6 +15,7 @@ Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 - `guides/style.md`: tabel 66 style, cocok untuk apa, catatan jujur.
 - `guides/suara.md`: narasi (jalur API dan jalur situs ElevenLabs).
 - `guides/media.md`: foto dan video asli dari Pixabay (hanya kalau user minta).
+- `guides/film-bebas.md`: standar mutu film bebas (pilih style, rencana gerak, potret). **Wajib dibaca.**
 - `guides/minyam.md`: jalur demo Minyam (hanya kalau user minta demo "ayam jatuh").
 
 ## Cara bicara dengan user (wajib)
@@ -44,7 +45,18 @@ Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 3. Suara: ★ suara Indonesia gratis (Microsoft edge-tts, perlu internet) / ElevenLabs lewat situs / kunci API ElevenLabs atau Cartesia / tanpa suara (musik dan teks). Detail: `guides/suara.md`.
 4. Bahan sendiri: logo, foto, rekaman suara, musik, data (boleh kosong). Style berbasis fakta (Evidence Films) butuh sumber yang bisa dipertanggungjawabkan.
 
-**3. Sutradarai dan buat.** Ikuti pustaka lemo-opuscar, bukan kebiasaanmu sendiri:
+**3. Sutradarai dan buat.** Ikuti pustaka lemo-opuscar, bukan kebiasaanmu sendiri.
+
+Gerbang wajib (dari uji nyata: hasil jelek karena langkah ini dilewati):
+- **G1. Baca SEMUA sampai habis, tanpa melewati:** `$LIB/AGENTS.md`, `$LIB/DIRECTOR.md`, `$LIB/TECHNIQUE.md`, `$LIB/styles/<slug>/STYLE.md`, dan `{{KIT}}/skill/guides/film-bebas.md`. Jangan mulai membangun sebelum selesai.
+- **G2. Cek kecocokan style dan topik.** Tulis satu kalimat "kenapa style ini cocok". Style arsip atau bukti (Evidence, Visual Investigation, Newsreel, Caption News) hanya untuk peristiwa nyata yang punya arsip; untuk topik umum (tips, sains populer, gaya hidup) jangan dipaksakan: bilang ke user dan tawarkan 2 style yang lebih cocok. Kalau user tetap mau, lanjut tapi rancang ulang isinya supaya sesuai gaya.
+- **G3. Rencana gerak per adegan** di TREATMENT.md: tiap adegan punya daftar elemen dan gerakannya (masuk, tengah, keluar), minimal satu elemen bergerak tiap detik, kedalaman lapisan (latar, tengah, depan bergerak beda kecepatan), transisi yang bervariasi, dan efek suara per adegan. Satu layar maksimal satu judul atau satu kalimat pendek; sisanya gambar.
+- **G4. Look wajib.** Buat 2-3 frame contoh dengan kode gambar sungguhan, bandingkan dengan STYLE.md, perbaiki. Baru render penuh. Tidak boleh dilewati "karena buru-buru".
+- **G5. Karakter dan ikon.** Isi video harus punya subjek yang digambar dalam gaya itu (karakter, benda, ikon), bukan hanya teks dan foto. Foto stok bukan latar mati: olah sesuai gaya (potong, beri bingkai, tekstur, gerak kamera pelan) atau jangan dipakai.
+- **G6. Tonton dengan mata.** Sebelum menyerahkan, ambil minimal 1 frame per 2 detik (lembar kontak) dan cek: ada gerak, tidak penuh teks, tidak ada elemen di zona aman potret. Versi 1 yang statis wajib dibuang dan dibuat ulang.
+
+Jalur: ini jalur lemo. Jalur Minyam (`kit.py build`, `guides/minyam.md`) hanya untuk demo "ayam jatuh"; jangan dicampur.
+
 - Baca `$LIB/AGENTS.md` lalu `$LIB/styles/<slug>/STYLE.md` (slug dari `find`), lalu `$LIB/DIRECTOR.md` dan `$LIB/TECHNIQUE.md`. `STYLE.md` baku; cerita, struktur, adegan, dan data adalah milikmu, dari topik user (jangan membengkokkan topik ke demo).
 - Urutan lemo: **TREATMENT.md** (tiga struktur, pilih satu) → **Look** (gambar contoh dengan kode gambar sungguhan, cek ke STYLE.md) → produksi (suara → musik → animasi → mix → render) → cek mandiri (DIRECTOR §11). Storyboard hanya kalau user minta.
 - Perbedaan dari bawaan lemo (mode skill):
