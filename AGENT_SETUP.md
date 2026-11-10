@@ -11,7 +11,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 
 ## Langkah 1. Pasang kit di satu folder tetap
 - Lokasi: `~/.motion-style-kit` (Windows: `%USERPROFILE%\.motion-style-kit`). Jangan pakai atau tulis ke folder tempat user sedang berada.
-- Belum ada: `git clone <link repo ini> ~/.motion-style-kit` (repo private: user harus sudah login GitHub; kalau gagal, minta user mengunduh zip dan bilang "setup folder ini"). Satu poin: "satu folder alat, folder kerjamu tidak disentuh".
+- Belum ada: `git clone <link repo ini> ~/.motion-style-kit` (repo publik, tanpa login). Satu poin: "satu folder alat, folder kerjamu tidak disentuh".
 - Sudah ada: `git -C ~/.motion-style-kit pull`.
 - Dari sini semua perintah dijalankan dari folder itu.
 

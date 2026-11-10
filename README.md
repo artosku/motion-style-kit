@@ -72,7 +72,7 @@ Layar 1080x1920: logo, judul, dan penanda progres di atas; area animasi di tenga
 - Jalur video bebas dengan perintah baru ini **belum diuji dari awal sampai akhir** pada banyak style.
 - Video demo Minyam: engine 2D saja; style 3D di demo adalah pendekatan 2D; beberapa style demo lemah (Shadow Puppetry, Copperplate Engraving, ASCII, Dark Tech Keynote, Chalkboard).
 - Jalur suara lewat API belum diuji dengan kunci sungguhan. Cek lisensi ElevenLabs/Cartesia sebelum video dipakai komersial.
-- Repo ini **private** untuk uji coba.
+- Repo ini publik. Video contoh memakai suara ElevenLabs milik pembuatnya; kalau kamu memakai ulang, cek lisensi suara sendiri.
 
 ## Kredit
 Lihat [`CREDITS.md`](CREDITS.md). Kit ini merangkai alat dan aset terbuka (lemo-opuscar, earshot, uisfx, Openverse CC0, Inter, Playwright, FFmpeg); tidak ada teknologi baru.
