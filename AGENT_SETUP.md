@@ -23,6 +23,7 @@ Kamu AI agent (Claude Code atau sejenis). User ingin membuat video motion dengan
 1. Suara narasi: ★ lewati dulu (video dengan musik dan teks) / saya punya akun ElevenLabs (generate di situsnya) / saya punya kunci API.
 2. Handle sosmed untuk tombol ajakan: ★ lewati (tombol "Follow Artosku") / isi handle. Kalau diisi, tulis `{"handle": "@..."}` ke `config.json` di folder kit.
 - Kalau memilih kunci API: katakan "salin `.env.example` jadi `.env` di folder kit, isi kuncinya sendiri, bilang 'sudah'". Cek dengan `doctor` (baris "suara lewat API siap"). Jangan tampilkan isinya.
+- Foto/video asli (opsional, hanya kalau user minta): kunci Pixabay `PIXABAY_API_KEY` di `.env` atau variabel lingkungan; panduan `skill/guides/media.md`.
 - Kalau memilih ElevenLabs di situs: pasang juga `pip install -r requirements-voice.txt` di `.venv` (izin dulu).
 
 ## Langkah 4. Pasang perintah

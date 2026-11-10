@@ -14,6 +14,7 @@ Pustaka style dan mesin render: **lemo-opuscar** (diunduh otomatis sekali ke `~/
 Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 - `guides/style.md`: tabel 66 style, cocok untuk apa, catatan jujur.
 - `guides/suara.md`: narasi (jalur API dan jalur situs ElevenLabs).
+- `guides/media.md`: foto dan video asli dari Pixabay (hanya kalau user minta).
 - `guides/minyam.md`: jalur demo Minyam (hanya kalau user minta demo "ayam jatuh").
 
 ## Cara bicara dengan user (wajib)

@@ -1,5 +1,5 @@
 """Pintu masuk semua perintah.   python tools/kit.py <perintah> [folder] [opsi]
-Perintah: doctor | setup | install-skill | styles [--lemo] | find <teks> | lemo [deps [voice] [music]] | vo <proyek> script|ingest|cartesia|elevenlabs | new <slug>
+Perintah: doctor | setup | install-skill | styles [--lemo] | find <teks> | lemo [deps [voice] [music]] | media <proyek> <kata> [--video] | vo <proyek> script|ingest|cartesia|elevenlabs | new <slug>
 Jalur demo Minyam: build | voice | ingest | mix | render | mux | check | shots | all"""
 import os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -55,6 +55,7 @@ def doctor():
         print('  (opsional) faster-whisper belum ada. Hanya perlu untuk memotong rekaman ElevenLabs dari situs dan cek --whisper: pip install -r requirements-voice.txt')
     from kitlib import load_env
     load_env(); prov = [n for n, a_, b_ in (('cartesia', 'CARTESIA_API_KEY', 'CARTESIA_VOICE_ID'), ('elevenlabs', 'ELEVENLABS_API_KEY', 'ELEVENLABS_VOICE_ID')) if os.environ.get(a_) and os.environ.get(b_)]
+    print('  foto/video Pixabay siap:', 'ya' if any(os.environ.get(k) for k in ('PIXABAY_API_KEY', 'PIXABAY_KEY', 'PIXABAY_API')) else 'belum ada kunci (opsional; hanya kalau user mau bahan foto/video)')
     print('  suara lewat API siap:', ', '.join(prov) if prov else 'belum ada (boleh: suara lewat situs ElevenLabs, atau tanpa suara)')
     print('SIAP' if not bad else 'BELUM SIAP: ' + ', '.join(bad))
     return not bad
@@ -87,7 +88,7 @@ def main():
     if not a:
         print(__doc__); return
     c, rest = a[0], a[1:]
-    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new', 'find', 'lemo', 'vo', 'install-skill') else None
+    w = os.path.abspath(rest[0]) if rest and c not in ('styles', 'doctor', 'setup', 'new', 'find', 'lemo', 'vo', 'media', 'install-skill') else None
     if c == 'doctor': sys.exit(0 if doctor() else 1)
     elif c == 'setup': setup()
     elif c == 'install-skill': py('install_skill.py', *rest)
@@ -99,6 +100,7 @@ def main():
     elif c == 'lemo':
         sh(['sh', os.path.join(T, 'lemo-setup.sh'), *rest])
     elif c == 'vo': py('vo.py', *rest)
+    elif c == 'media': py('media.py', *rest)
     elif c == 'styles' and '--lemo' in rest:
         import json
         L = json.load(open(os.path.join(KIT, 'assets', 'lemo-styles.json'), encoding='utf-8')); cat = None

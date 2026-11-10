@@ -9,6 +9,7 @@ Bikin video motion tentang **topik apa saja** dalam satu dari **66 style** dari 
 - AI agent menyutradarai filmnya (cerita, adegan, data) memakai pustaka **lemo-opuscar**, lalu membuat narasi, musik, efek suara, dan caption.
 - Kit ini hanya pembungkus: mengunduh dan memasang pustaka, mencocokkan nama style ("kertas", "8 bit", nomor 1-66), menyiapkan suara (edge-tts Indonesia gratis, ElevenLabs, Cartesia), dan merapikan hasil.
 - Kamu **tidak perlu menyebut nama alat apa pun**. Semuanya sudah diurus.
+- Foto dan video asli dari Pixabay bisa disisipkan kalau kamu memintanya dan punya kunci API gratis sendiri (`python tools/kit.py media <proyek> <kata>`).
 - Hasil: MP4 **16:9** (YouTube, presentasi) dan/atau **9:16** (TikTok, Reels, Shorts) dengan area aman untuk tombol dan caption.
 - **Minyam** (maskot ayam) hanya dipakai di video contoh di bawah, untuk memamerkan 66 style secara berurutan. Isi videomu tidak memakai Minyam.
 
