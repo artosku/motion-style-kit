@@ -41,6 +41,7 @@ Jawaban dipakai seterusnya; jangan tanya ulang di langkah mana pun.
 - Hasil tersimpan di `~/Videos/video-style/<nama>/` (path lengkap disebut tiap selesai).
 - Satu video 45 detik butuh beberapa menit render. Versi potret 9:16 tersedia.
 - Minyam hanya dipakai di video demo. Kualitas tiap style beda; lihat `/motion-style-list`.
+- Tip model: untuk membuat video, sarankan user memakai model kuat (Sonnet atau Opus), bukan model kecil seperti Haiku; model kecil sering melewati penyutradaraan dan hasilnya jelek.
 - Tip izin: kalau Claude Code terlalu sering meminta izin, user bisa mengizinkan perintah `python`, `node`, `ffmpeg` untuk folder `~/.motion-style-kit` dan `~/lemo-opuscar` lewat `/permissions` (kamu tidak mengubah izin sendiri).
 
 ## Kalau gagal

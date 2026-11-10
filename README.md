@@ -46,6 +46,7 @@ Daftar lengkap dengan deskripsi: `python tools/kit.py styles`. Daftar semua styl
 
 ## Yang kamu butuhkan
 - Node.js 20+, Python 3.9+, ffmpeg, Git. (Agent mengecek dan memberi tahu cara memasang yang kurang.)
+- **Model AI yang kuat** untuk membuat video: pakai Claude Sonnet atau Opus (atau setara). Model kecil seperti Haiku cenderung melewati langkah penyutradaraan, hasilnya statis dan penuh teks.
 - Suara narasi: **boleh dilewati**. Pilihannya: akun ElevenLabs (generate di situsnya), atau kunci API Cartesia/ElevenLabs di file `.env`. Tanpa suara, video tetap jadi dengan musik dan teks.
 
 ## Versi potret 9:16
