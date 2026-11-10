@@ -2,6 +2,27 @@
 
 Dibuat dari uji nyata: video pertama jelek karena statis, penuh teks, dan style salah pilih. Standar ini wajib.
 
+## 0. Struktur konten (kerangka naskah, urut)
+1. **Hook (0-3 detik):** satu kalimat atau gambar yang membuat orang berhenti menggulir.
+2. **Taruhan / relevansi (3-8 detik):** kenapa ini penting buat penonton sekarang.
+3. **Isi (inti):** poin-poin, tiap poin satu adegan, urut dari yang paling mengejutkan atau berguna.
+4. **Puncak / twist:** satu fakta atau pembalikan yang paling diingat.
+5. **Penutup + ajakan (3-5 detik):** ringkasan satu kalimat, lalu satu ajakan (follow, simpan, bagikan).
+6. **Loop (opsional):** akhir yang nyambung ke hook supaya diputar ulang.
+
+## 0b. Riset
+- **Fakta:** cari dari sumber terpercaya (jurnal, lembaga kesehatan/resmi, media bereputasi). Tulis di `FACTS.md`: klaim, sumber, tanggal. Tidak ada sumber = jangan dipakai.
+- **Hook:** cari contoh video pendek populer untuk topik sejenis dan analisis publik tentang hook. Ambil POLA-nya, bukan kalimatnya.
+- Pola hook yang umum berhasil (jadikan bahan pilihan, bukan jaminan):
+  - Pertanyaan yang bikin penasaran: "Kenapa makin capek makin susah tidur?"
+  - Klaim berlawanan dengan dugaan: "Tidur 8 jam bukan kuncinya."
+  - Angka spesifik: "3 kebiasaan jam 9 malam yang merusak tidurmu."
+  - Kesalahan umum: "Kamu salah soal kopi dan tidur."
+  - Hasil dulu, caranya kemudian: "Tidur dalam 10 menit, begini caranya."
+  - Langsung di tengah cerita atau situasi yang dikenal penonton.
+- Tulis 3 hook, pilih satu, dan jelaskan alasannya di TREATMENT.md. Hook harus ditepati isinya (jangan clickbait kosong).
+- Jujur: tidak ada yang bisa menjamin viral. Bilang ke user bahwa ini pola yang umum berhasil, hasilnya tergantung banyak hal.
+
 ## 1. Pilih style yang cocok
 | Jenis topik | Style yang cocok | Hindari |
 |---|---|---|

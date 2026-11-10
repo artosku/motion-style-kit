@@ -43,6 +43,11 @@ Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 3. Suara: ★ suara Indonesia gratis (Microsoft edge-tts, perlu internet) / ElevenLabs lewat situs / kunci API ElevenLabs atau Cartesia / tanpa suara (musik dan teks). Detail: `guides/suara.md`.
 4. Bahan sendiri: logo, foto, rekaman suara, musik, data (boleh kosong). Style berbasis fakta (Evidence Films) butuh sumber yang bisa dipertanggungjawabkan.
 
+**2b. Riset (otomatis, tanpa bertanya; wajib sebelum menulis naskah).** Detail dan struktur: `{{KIT}}/skill/guides/film-bebas.md` bagian "Struktur konten" dan "Riset".
+- Cari fakta topik dari sumber yang bisa dipertanggungjawabkan (WebSearch/WebFetch). Catat sumbernya di `FACTS.md` proyek. Jangan mengarang angka.
+- Cari contoh hook video pendek yang terbukti jalan untuk topik sejenis (analisis publik, video populer). Pilih pola hook, jangan menyalin kalimat orang.
+- Tulis 3 pilihan hook dan pilih satu dengan alasannya di TREATMENT.md. Jangan menjanjikan viral ke user.
+
 **3. Sutradarai dan buat.** Ikuti pustaka lemo-opuscar, bukan kebiasaanmu sendiri.
 
 Gerbang wajib (dari uji nyata: hasil jelek karena langkah ini dilewati):
