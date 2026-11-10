@@ -50,6 +50,11 @@ Panduan di folder skill ini (`guides/`), baca hanya yang perlu:
 
 **3. Sutradarai dan buat.** Ikuti pustaka lemo-opuscar, bukan kebiasaanmu sendiri.
 
+**URUTAN BAKU (narasi dulu, visual belakangan).** Durasi tiap adegan ditentukan oleh suara, jadi suara harus ada sebelum animasi dibangun:
+1. Riset dan TREATMENT.md → 2. **Tulis naskah narasi** (`lines.json`, satu baris per adegan) dan **tunjukkan ke user untuk disetujui** → 3. **Suara dibuat dan dimasukkan** (`vo ... ingest` atau edge-tts/API; `voices/<id>.wav` + `dur.json`) → 4. Rencana gerak dan Look dengan durasi dari suara → 5. Animasi → 6. Mix → 7. Render.
+- Jalur situs ElevenLabs: setelah naskah disetujui, jalankan `kit.py vo <proyek> script`, berikan path lengkap `script_elevenlabs.txt` ke user dan **berhenti menunggu** user menaruh mp3-nya. Jangan membangun visual sambil menunggu, dan jangan memberi file naskah di tengah atau setelah visual jadi.
+- Jangan menebak durasi. Kalau suara belum ada, jangan membuat animasi dulu.
+
 Gerbang wajib (dari uji nyata: hasil jelek karena langkah ini dilewati):
 - **G1. Baca SEMUA sampai habis, tanpa melewati:** `$LIB/AGENTS.md`, `$LIB/DIRECTOR.md`, `$LIB/TECHNIQUE.md`, `$LIB/styles/<slug>/STYLE.md`, **`$LIB/styles/<slug>/DEMO.md`** (contoh film style itu: pecahan adegan, waktu, tata letak, gerakan khas; dipakai sebagai patokan mutu dan kepadatan, BUKAN untuk ditiru cerita atau adegannya), dan `{{KIT}}/skill/guides/film-bebas.md`. Jangan mulai membangun sebelum selesai.
 - **G2. Cek kecocokan style dan topik.** Tulis satu kalimat "kenapa style ini cocok". Style arsip atau bukti (Evidence, Visual Investigation, Newsreel, Caption News) hanya untuk peristiwa nyata yang punya arsip; untuk topik umum (tips, sains populer, gaya hidup) jangan dipaksakan: bilang ke user dan tawarkan 2 style yang lebih cocok. Kalau user tetap mau, lanjut tapi rancang ulang isinya supaya sesuai gaya.
