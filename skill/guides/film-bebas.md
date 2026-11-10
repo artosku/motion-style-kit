@@ -13,6 +13,11 @@ Dibuat dari uji nyata: video pertama jelek karena statis, penuh teks, dan style 
 
 Kalau pilihan user tidak cocok: bilang satu poin, tawarkan dua alternatif. Kalau tetap dipakai, ubah isi supaya masuk akal di gaya itu (mis. "arsip" diganti "catatan penyelidik" untuk topik tidur).
 
+## 1b. Patokan mutu: DEMO.md style itu
+- Buka `$LIB/styles/<slug>/DEMO.md` sebelum menulis TREATMENT. Lihat tabelnya: berapa adegan per menit, berapa detik tiap adegan, tata letak, dan "Native move" (gerakan khas) per adegan.
+- Pakai sebagai ukuran kepadatan dan mutu. Jangan memakai ulang cerita, adegan, properti, atau waktunya.
+- Rencana gerak kamu harus sama padat atau lebih padat daripada tabel itu. Kalau adegan kamu jauh lebih sedikit atau lebih kosong, tambah.
+
 ## 2. Isi per adegan (rencana gerak, ditulis di TREATMENT.md)
 Tiap adegan ditulis seperti ini:
 - Tujuan satu kalimat.
