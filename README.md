@@ -61,7 +61,7 @@ Layar 1080x1920: logo, judul, dan penanda progres di atas; area animasi di tenga
 | Folder | Isi |
 |---|---|
 | `AGENT_SETUP.md` | satu file yang dibaca agent untuk memasang semuanya |
-| `skill/` | perintah `/motion-style`, `/motion-style-list`, dan panduan kualitasnya |
+| `skill/` | perintah `/motion-style`, `/motion-style-list`, `/minyam-style` (video promo aksi Minyam), dan panduan kualitasnya |
 | `engine/` | mesin demo Minyam (66 style, panel, transisi, layar akhir, tata letak potret) |
 | `tools/lemo-setup.sh` | pengunduh pustaka lemo-opuscar (salinan dari lemo-opuscar, MIT) |
 | `render/` | alat render dan pengatur loudness |
@@ -75,6 +75,9 @@ Layar 1080x1920: logo, judul, dan penanda progres di atas; area animasi di tenga
 - Video demo Minyam: engine 2D saja; style 3D di demo adalah pendekatan 2D; beberapa style demo lemah (Shadow Puppetry, Copperplate Engraving, ASCII, Dark Tech Keynote, Chalkboard).
 - Jalur suara lewat API belum diuji dengan kunci sungguhan. Cek lisensi ElevenLabs/Cartesia sebelum video dipakai komersial.
 - Repo ini publik. Video contoh memakai suara ElevenLabs milik pembuatnya; kalau kamu memakai ulang, cek lisensi suara sendiri.
+
+## Lisensi karakter dan logo
+**Karakter Minyam dan logo Artosku hanya untuk penggunaan nonkomersial (CC BY-NC 4.0), dilarang dipakai komersial.** Detail: [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md).
 
 ## Kredit
 Lihat [`CREDITS.md`](CREDITS.md). Kit ini merangkai alat dan aset terbuka (lemo-opuscar, earshot, uisfx, Openverse CC0, Inter, Playwright, FFmpeg); tidak ada teknologi baru.

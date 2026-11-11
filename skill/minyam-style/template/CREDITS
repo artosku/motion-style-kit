@@ -1,0 +1,12 @@
+Minyam Kejar Uang Kabur
+
+Gambar, animasi, musik: dibuat dengan kode di folder ini (Canvas 2D, WebGL, numpy). Tanpa sampel musik, tanpa stok gambar.
+Karakter Minyam dan logo Artosku: milik Artosku (minyam.js dan path logo dari kit resmi, tidak diubah). Lisensi CC BY-NC 4.0: hanya untuk penggunaan NONKOMERSIAL, dilarang dipakai komersial oleh pihak lain (lihat LICENSE-ASSETS.md di repo motion-style-kit).
+
+Pihak ketiga:
+- lemo-opuscar (LemoLab), MIT: alat render, efek layar CRT (core/post/crt.js), sintesis efek suara (core/audio/sfx.py). https://github.com/lemomo-ai/lemo-opuscar
+- earshot (Leon Lin), MIT: efek suara whoosh, impact, zip, pop, shimmer, ding, klik. https://github.com/Leonxlnx/earshot
+- Font Kanit Black Italic (Cadson Demak), SIL OFL 1.1: fonts/Kanit-BlackItalic.ttf, lisensi di fonts/Kanit-OFL.txt
+- Font Inter (The Inter Project Authors), SIL OFL 1.1: fonts/Inter.ttf
+
+Catatan: tombol "Play Store" digambar generik, bukan lencana resmi Google Play.

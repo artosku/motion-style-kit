@@ -27,7 +27,7 @@ Jawaban dipakai seterusnya; jangan tanya ulang di langkah mana pun.
 - Kalau ada langkah gagal: baca error, perbaiki, jalankan `ready` lagi (aman diulang). Jangan kembali ke user kecuali butuh sesuatu yang hanya user punya.
 
 ## Langkah 3. Pasang perintah
-- `python tools/kit.py install-skill` (menulis `~/.claude/skills/motion-style/` dan `motion-style-list/`). Untuk agen lain: `install-skill <folder skills agen itu>`.
+- `python tools/kit.py install-skill` (menulis `~/.claude/skills/motion-style/`, `motion-style-list/`, dan `minyam-style/`). Untuk agen lain: `install-skill <folder skills agen itu>`.
 
 ## Langkah 4. Uji sampai ujung (sekali, supaya video pertama user tidak gagal)
 - `python tools/kit.py find pixel` harus menampilkan style.

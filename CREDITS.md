@@ -2,6 +2,9 @@
 
 Kit ini **tidak membuat teknologi baru**. Ia merangkai alat dan aset terbuka supaya orang awam cukup mengetik `/motion-style`. Ini semua yang dipakai.
 
+## Karakter dan logo (hanya nonkomersial)
+Karakter **Minyam** dan **nama serta logo Artosku** milik Artosku, dilisensikan CC BY-NC 4.0: **dilarang dipakai komersial**. Lihat [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md).
+
 ## Wajib (ada syaratnya)
 | Apa | Dipakai untuk | Lisensi | Syarat | Sudah dipenuhi |
 |---|---|---|---|---|
