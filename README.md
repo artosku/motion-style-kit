@@ -36,6 +36,14 @@ Minyam jatuh melewati style satu per satu, dibuat dengan engine demo di `engine/
 
 Spec dan naskah narasi contoh ada di `examples/20-style/` (#1) dan `examples/lemo-46/` (#2 sampai #4; jalankan `make_specs.py` untuk membuat ulang folder kerjanya).
 
+## Contoh lain (potret 9:16)
+| Video | Isi | Cara membuat |
+|---|---|---|
+| [Minyam Samurai](examples/videos/portrait/minyam-samurai-portrait.mp4) | Promo aksi gaya 80s Cel Anime | `/minyam-style` |
+| [Minyam Kejar Uang Kabur](examples/videos/portrait/minyam-kejar-uang-portrait.mp4) | Promo aksi kejar-kejaran | `/minyam-style` |
+
+Karakter Minyam dan logo Artosku hanya boleh dipakai nonkomersial (lihat `LICENSE-ASSETS.md`).
+
 ## 66 style
 - **1-20** (video #1): Whiteboard Explainer, Crayon Picture Book, Watercolor Brush, Chinese Ink Wash, Risograph Print, Woodcut Print, Swiss Motion Graphics, Art Deco, Blueprint, Stained Glass, Pixel RPG 16-bit, Rubber Hose Cartoon, 80s Cel Anime, Mid-century Cartoon, Red Paper-cut, Ukiyo-e, Brick Toy, Tilt-Shift Miniature, Low-poly Island, Paper Pop-up Book.
 - **21-40** (video #2): Caption News, 1920s Newsreel, Live Countdown Split-screen, Time-lapse Symphony, Visual Investigation, Constructivist Montage, Sports Telestrator, Broadcast News Package, Satellite Briefing, Engineering Briefing Board, LiDAR Survey, Projection on White Model, Data Physicalization, Exploded Teardown, Microscope Story, Archive Light Table, Impasto Oil Painting, One-line Drawing, Urban Sketch, Chalkboard.
